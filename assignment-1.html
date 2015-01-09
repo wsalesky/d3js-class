@@ -54,17 +54,17 @@
         /// Data in JSON format. In this type of JSON variables before ":" are called keys, after semicolon are called values.
            var data = [{"Quantity":"100","fruits":"Apples"},{"Quantity":"60","fruits":"Pears"},{"Quantity":"70","fruits":"Tangerines"},{"Quantity":"90","fruits":"Pomegranates"},{"Quantity":"50","fruits":"Oranges"}];
            
-            var margin = {top: 80, right: 80, bottom: 80, left:80}, //// The concept of margins is best explained here: http://bl.ocks.org/mbostock/3019563
+            var margin = {top: 80, right: 40, bottom: 80, left:40}, //// The concept of margins is best explained here: http://bl.ocks.org/mbostock/3019563
                 width = 600, ///width and height of the SVG image 
                 height = 500;
-        
-            var y = d3.scale.linear()
-                .domain([0, d3.max(data, function(d) {return d.Quantity})])
-                .range([height,0]);
         
             var x = d3.scale.ordinal() /// This is a linear scale. This scale is used to draw the y-axis. 
                 .domain(data.map(function(d) { return d.fruits; }))
                 .rangeRoundBands([0,width], .5);
+                
+            var y = d3.scale.linear()
+                .domain([0, (d3.max(data, function(d) {return d.Quantity}))])
+                .range([height - margin.top - margin.bottom, 0]);
                 
             var xAxis = d3.svg.axis() /// Specification for xAxis
                 .scale(x) // link to x scale
@@ -89,15 +89,14 @@
             .append('g') /// here we specify that the chart will conatin a group of elements
                 .attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')'); /// the position of the chart should start not at 0,0,but at 40,40.
             
-             svg.append('g') /// Append yAxis
+             svg.append('g') /// Append xAxis
                .attr('class', 'axis') ///A reference to a CSS class
                 .attr("transform", "translate(0," + (height - margin.bottom - margin.top)+")") 
                 /// the grid should not start at 0,0. Where shoud it start,can you compute?
                .call(xAxis); //Reference to yAxis
              
-             svg.append('g') /// Append yAxis
-               .attr('class', 'axis') ///A reference to a CSS class
-               .attr('transform', 'translate(0,0)') 
+             svg.append('g') /// Append yAxis [height - margin.top - margin.bottom, 0]
+               .attr('class', 'axis') ///A reference to a CSS class 
                .call(yAxis); //Reference to yAxis
                 
             svg.selectAll('.chart') /// Here we select the CSS class chart. (Remember we assigned it earlier?)
@@ -116,7 +115,7 @@
               .enter().append("svg:text") //append text labels with values
                 .attr("x", function(d) { return x(d.fruits); }) // position
                 .attr("y", function(d) { return y(d.Quantity); })/// position of the text label
-                .attr("dx", "0.5em") // padding-right
+                .attr("dx", ".5em") // padding-right
                 .attr("dy", "1.50em") // padding-left
                 .attr("text-anchor", "left") // text-align: left
                 .text(function(d) { return d.Quantity })
@@ -140,22 +139,21 @@
         <div class="wrapper">
             <header>
                 <h1>D3js-class</h1>
-                <p>Classwork for d3js</p>
+                <p><a href="index.html">Classwork for d3js</a></p>
                 <h3>Class Assignments</h3>
-                <ul>
-                    <li><a href="assignment-1.html">Assignment 1: Bar Graph - Fruit</a></li>
-                </ul>
-                
+                <p><a href="assignment-1.html">Assignment 1: Bar Graph - Fruit</a></p>
                 <p class="view"><a href="https://github.com/wsalesky/d3js-class">View the Project on GitHub <small>wsalesky/d3js-class</small></a></p>
-                
             </header>
-            <section>
-                <h3>Class Assignments</h3>
+            <section id="contents">
+                <h2>Assignment 1</h2>
                 <div id="bar-demo"  style="position: relative; top: 3px; left: 20px;"></div>
             </section>
             <footer>
+                
                 <p>This project is maintained by <a href="https://github.com/wsalesky">wsalesky</a></p>
-                <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+                <p><small>Hosted on GitHub Pages 
+                    &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a>
+                </small></p>
             </footer>
         </div>
         <script src="javascripts/scale.fix.js"></script>

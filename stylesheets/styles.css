@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
-  padding:50px;
+  padding:30px;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
@@ -46,7 +46,7 @@ a small {
 }
 
 .wrapper {
-  width:860px;
+  width:90%;
   margin:0 auto;
 }
 
@@ -96,7 +96,7 @@ img {
 }
 
 header {
-  width:270px;
+  width:200px;
   float:left;
   position:fixed;
 }
@@ -104,9 +104,7 @@ header {
 header ul {
   list-style:none;
   height:40px;
-  
   padding:0;
-  
   background: #eee;
   background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
@@ -160,8 +158,10 @@ header ul a strong {
 }
 
 section {
-  width:500px;
-  float:right;
+  border-left: 1px solid #eee !important;
+  margin-left:200px;
+  padding-top:2em;
+  padding-left: 2em;
   padding-bottom:50px;
 }
 
@@ -177,7 +177,7 @@ hr {
 }
 
 footer {
-  width:270px;
+  width:200px;
   float:left;
   position:fixed;
   bottom:50px;
@@ -194,6 +194,7 @@ footer {
     float:none;
     position:static;
     width:auto;
+    padding:2em;
   }
   
   header {
