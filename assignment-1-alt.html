@@ -46,7 +46,7 @@
             
             }
             .chart text{fill:black;}
-            /*.chart text.label{fill: white;}*/
+            .chart text.label{fill: white;}
             .chart text.title{font-size: 48px; fill:black;}
         </style>
         <script type="text/javascript">
@@ -113,10 +113,13 @@
             svg.selectAll(".rect") /// select all DOM elements that have rect class
                 .data(data) /// bind to data
               .enter().append("svg:text") //append text labels with values
-                .attr("x", function(d) { return x(d.Quantity); }) // position
+                .attr("x", function(d) { return x(d.Quantity) - margin.right; }) // position
                 .attr('y', function(d) { return y(d.fruits); })
-                .attr("dy", ".5em") // padding-right
-                .attr("dx", "1.50em") // padding-left
+                //.attr('x', function(d) { return x(d.fruits); }) 
+                //.attr('y', function(d) { return width - margin.left - margin.right - (width - margin.left - margin.right -y(d.Quantity); })
+                
+                .attr("dy", "1.5em") // padding-right
+                .attr("dx", ".50em") // padding-left
                 .attr("text-anchor", "left") // text-align: left
                 .text(function(d) { return d.Quantity })
                 .attr("class", "label") // text-align: left
@@ -142,7 +145,8 @@
                 <h1>D3js-class</h1>
                 <p><a href="index.html">Classwork for d3js</a></p>
                 <h3>Class Assignments</h3>
-                <p><a href="assignment-1.html">Assignment 1: Bar Graph - Fruit</a></p>
+                <p><a href="assignment-1.html">Assignment 1: Bar Graph - Fruit (vertical)</a></p>
+                <p><a href="assignment-1-alt.html">Assignment 1: Bar Graph - Fruit (horizontal)</a></p>
                 <p class="view">
                     <a href="https://github.com/wsalesky/d3js-class">View the Project on GitHub <br/>
                     <small>wsalesky/d3js-class</small></a></p>
