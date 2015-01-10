@@ -63,7 +63,7 @@
                 .rangeRoundBands([0,(height - margin.top - margin.bottom)], .5);
                 
             var x = d3.scale.linear()
-                .domain([(d3.max(data, function(d) {return d.Quantity})),0])
+                .domain([(d3.max(data, function(d) {return Number(d.Quantity)})),0])
                 .range([width - margin.left - margin.right,0]);
                 
             var xAxis = d3.svg.axis() /// Specification for xAxis
