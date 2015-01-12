@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>D3js Assignment 1</title>
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+        <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+        <style>
+            body {
+              font: 10px sans-serif;
+            }
+            
+              .chart {
+                font-family: Arial, sans-serif;
+                font-size: 10px;
+              }
+            
+              .axis path, .axis line {
+                fill: none;
+                stroke: #0000ff;
+                shape-rendering: crispEdges;
+              }
+            
+              .bar {
+                fill: steelblue;
+                z-index: 1000;
+              }
+              .grid .tick {
+                stroke: lightgrey;
+                opacity: 0.7;
+                z-index: -1000;
+            }
+            .grid path {
+                  stroke-width: 0;
+                  z-index: -1000;
+            
+            }
+            .chart text{fill:black;}
+            .chart text.label{fill: white;}
+            .chart text.title{font-size: 48px; fill:black;}
+        </style>
+        <script type="text/javascript">
+        $(document).ready(function(){ /// jQuery function that starts JavaScript when DOM loads
+        /// Data in JSON format. In this type of JSON variables before ":" are called keys, after semicolon are called values.
+           var data = [{"Quantity":"100","fruits":"Apples"},{"Quantity":"60","fruits":"Pears"},{"Quantity":"70","fruits":"Tangerines"},{"Quantity":"90","fruits":"Pomegranates"},{"Quantity":"50","fruits":"Oranges"}];
+           
+            var margin = {top: 80, right: 20, bottom: 80, left:80}, //// The concept of margins is best explained here: http://bl.ocks.org/mbostock/3019563
+                width = 600, ///width and height of the SVG image 
+                height = 500;
+        
+            var y = d3.scale.ordinal() /// This is a linear scale. This scale is used to draw the y-axis. 
+                .domain(data.map(function(d) { return d.fruits; }))
+                .rangeRoundBands([0,(height - margin.top - margin.bottom)], .5);
+                
+            var x = d3.scale.linear()
+                .domain([(d3.max(data, function(d) {return Number(d.Quantity)})),0])
+                .range([width - margin.left - margin.right,0]);
+                
+            var xAxis = d3.svg.axis() /// Specification for xAxis
+                .scale(x) // link to x scale
+                .orient('bottom');
+        
+            var yAxis = d3.svg.axis() /// Specification for yAxis
+                .scale(y) // link to y scale
+                .orient('left');
+        
+            var xAxis1 = d3.svg.axis() //// this is an additional xAxis scale for gridlines
+                .scale(x) // link to x scale
+                .orient('bottom'); /// important to keep orientation for the gridlines.
+        
+            var yAxis1 = d3.svg.axis()
+                .scale(y)
+                .orient('left');
+            
+            var svg = d3.select('#bar-demo').append('svg') /// append an SVG chart to the div with id #bar-demo
+                .attr('class', 'chart') /// Attach a CSS class (see styles above). This class can have any oher name
+                .attr('width', width) // a reference to width which was specified earlier in this file
+                .attr('height', height) // a reference to height which was specified earlier in this file
+            .append('g') /// here we specify that the chart will conatin a group of elements
+                .attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')'); /// the position of the chart should start not at 0,0,but at 40,40.
+            
+             svg.append('g') /// Append xAxis
+               .attr('class', 'axis') ///A reference to a CSS class
+                .attr("transform", "translate(0," + (height - margin.bottom - margin.top)+")") 
+                /// the grid should not start at 0,0. Where shoud it start,can you compute?
+               .call(xAxis); //Reference to yAxis
+             
+             svg.append('g') /// Append yAxis [height - margin.top - margin.bottom, 0]
+               .attr('class', 'axis') ///A reference to a CSS class 
+               .call(yAxis); //Reference to yAxis
+                
+            svg.selectAll('.chart') /// Here we select the CSS class chart. (Remember we assigned it earlier?)
+                .data(data) //Bind the chart to data.
+              .enter().append('rect') // add SVG rectangles
+                .attr('class', 'bar') // Add a CSS class
+                .attr('x', '0')
+                .attr('y', function(d) { return y(d.fruits); })
+                /// Specification how tall bars should be in pixels
+                .attr('height', 25) // Width of bar charts
+                .attr('width', function(d) { return x(d.Quantity) }); //height of bars in pixel
+        
+        
+            svg.selectAll(".rect") /// select all DOM elements that have rect class
+                .data(data) /// bind to data
+              .enter().append("svg:text") //append text labels with values
+                .attr("x", function(d) { return x(d.Quantity) - margin.right; }) // position
+                .attr('y', function(d) { return y(d.fruits); })
+                //.attr('x', function(d) { return x(d.fruits); }) 
+                //.attr('y', function(d) { return width - margin.left - margin.right - (width - margin.left - margin.right -y(d.Quantity); })
+                
+                .attr("dy", "1.5em") // padding-right
+                .attr("dx", ".50em") // padding-left
+                .attr("text-anchor", "left") // text-align: left
+                .text(function(d) { return d.Quantity })
+                .attr("class", "label") // text-align: left
+                ; /// Text
+           	
+           	//// Adding graph Title     
+              svg.append("text")
+                      .attr("x", (width / 2))             
+                      .attr("y", 0 - (margin.top / 2))
+                      .attr("text-anchor", "middle")  
+                      .attr('class', 'title')
+                      .text("Fruits");			
+                  
+                
+        });
+
+        </script>
+        
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1>D3js-class</h1>
+                <p><a href="index.html">Classwork for d3js</a></p>
+                <h3>Class Assignments</h3>
+                <p><a href="assignment-1.html">Assignment 1: Bar Graph - Fruit (vertical)</a></p>
+                <p><a href="assignment-1-alt.html">Assignment 1: Bar Graph - Fruit (horizontal)</a></p>
+                <p class="view">
+                    <a href="https://github.com/wsalesky/d3js-class">View the Project on GitHub <br/>
+                    <small>wsalesky/d3js-class</small></a></p>
+            </header>
+            <section id="contents">
+                <h2>Assignment 1</h2>
+                <div id="bar-demo"  style="position: relative; top: 3px; left: 20px;"></div>
+            </section>
+            <footer>
+                
+                <p>This project is maintained by <a href="https://github.com/wsalesky">wsalesky</a></p>
+                <p><small>Hosted on GitHub Pages 
+                    &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a>
+                </small></p>
+            </footer>
+        </div>
+        <script src="javascripts/scale.fix.js"></script>
+    </body>
+</html>
