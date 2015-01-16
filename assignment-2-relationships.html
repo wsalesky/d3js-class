@@ -29,17 +29,23 @@
                 stroke: purple;
                 /*stroke-dasharray: 0, 2 1;*/
             }
-            marker#place {
-            fill: green;
+            circle.place {
+            stroke: steelblue;
+            fill: steelblue;
             }
-            marker#person, marker#keyword {
-            fill: black;
+            circle.keyword {
+            stroke: purple;
+            fill: steelblue;
+            }
+            circle.person{
+            fill: blue;
+            fill: steelblue;
             }
             </style>
             <script type='text/javascript'>
             //<![CDATA[ 
-            var width = 800,
-                height = 500;
+            var width = 1200,
+                height = 650;
             $(window).load(function() { /// jQuery function that starts after window loads.
             var links =
             [
@@ -914,8 +920,8 @@
                 .nodes(d3.values(nodes))
                 .links(links)
                 .size([width,height])
-                .linkDistance(60)
-                .charge(-300)
+                .linkDistance(50)
+                .charge(-250)
                 .on("tick",tick)
                 .start();
              
