@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <title></title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+        <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+        <style>
+            
+            body {
+              font: 10px sans-serif;
+            }
+              .chart {
+                font-family: Arial, sans-serif;
+                font-size: 10px;
+              }
+            
+            .axis line,  
+            .axis path {
+                fill: none;
+                stroke: #0000ff;
+                stroke-width: 2px;
+                shape-rendering: crispEdges;
+              }
+            
+              .bar {
+                fill: steelblue;
+                z-index: 1000;
+              }
+              .grid .tick {
+                stroke: lightgrey;
+                opacity: 0.7;
+                z-index: -1000;
+            }
+            .grid path {
+                  stroke-width: 0;
+                  z-index: -1000;
+            
+            }
+    </style>
+        
+        <script type="text/javascript">
+$(document).ready(function(){ 
+   var data = [{"date":"2015-01-20","total":3},{"date":"2015-01-21","total":8},{"date":"2015-01-22","total":2},{"date":"2015-01-23","total":10},{"date":"2015-01-24","total":3},{"date":"2015-01-25","total":20},{"date":"2015-01-26","total":12}];
+
+var margin = {top: 40, right: 40, bottom: 40, left:40}, 
+    width = 600, 
+    height = 500;
+
+var x = d3.time.scale()    
+    .domain([new Date(data[0].date), d3.time.day.offset(new Date(data[data.length - 1].date), 1)])
+    .rangeRound([0, width - margin.left - margin.right]); 
+
+var y = d3.scale.linear()
+    .domain([0, d3.max(data, function(d) { return d.total;})])
+    .range([height - margin.top - margin.bottom, 0]);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient('bottom')
+    .ticks(d3.time.days, 1) 
+    .tickFormat(d3.time.format('%m-%d-%Y')) 
+    .tickSize(0)
+    .tickPadding(8);
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient('left')
+    .tickPadding(8);
+    
+var xAxis1 = d3.svg.axis()
+    .scale(x)
+    .orient('bottom');
+
+var yAxis1 = d3.svg.axis()
+    .scale(y)
+    .orient('left');
+
+var svg = d3.select('#bar-demo').append('svg') 
+    .attr('class', 'chart') 
+    .attr('width', width)
+    .attr('height', height) 
+    .append('g')
+    .attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')'); 
+svg.append('g')
+    .attr('class', 'x axis') 
+    .attr('transform', 'translate(0, ' + (height - margin.top - margin.bottom) + ')') 
+    .call(xAxis)
+    .append("text")
+      .attr("class", "label")
+      .attr("x", 550)
+      .attr("y", 0)
+      .style("text-anchor", "end")
+      .text("Dates"); 
+
+
+
+svg.append("g")    
+        .attr("class", "grid")
+        .attr("transform", "translate(0," + (height - margin.bottom - margin.top)+")") 
+        .call(xAxis1
+        .ticks(d3.time.hours, 12) 
+        .tickSize(-(height-margin.top-margin.bottom), 0, 0) 
+        .tickFormat("")
+        );            
+    
+svg.append('g')
+  .attr('class', 'y axis')
+  .call(yAxis)
+.append("text")
+      .attr("class", "label")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Values");
+
+svg.append("g") 
+        .attr("class", "grid")
+        .call(yAxis1
+        .ticks(20) 
+        .tickSize(-(width-margin.left-margin.right), 0, 0)
+         .tickFormat("")
+        );
+        
+//////////////new part/////////////
+var line = d3.svg.line()
+              .x(function(d) { return x(new Date(d.date)); })
+              .y(function(d) { return y(d.total); })
+              .interpolate("cardinal"); /// Cardinal is an interpolation method.
+
+              //There different interpolation methods. Try adding other methods here:
+              //linear, linear-closed, step, step-before, step-after, basis, basis-open,
+              //basis-closed, bundle, cardinal, cardinal-open, cardinal-closed, monotone.
+              //Observe how your line changes.
+
+/// Now we have to attach the line to chart. Line is attached as a path.
+svg.append("path")
+              .attr("d", line(data)) /// here we link the path to the line function
+              .attr("stroke", "blue") /// specify color of the line
+              .attr("stroke-width", "2px") /// specify width of the line
+              .attr("fill", "none"); /// No fill. If you want to add a fill, add an HTML color number,e.g., #0000ff
+
+    
+//////////////////////the end ///////////////////////////
+
+
+svg.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "20px") 
+        .text("Totals in January");		
+	
+});
+
+</script>
+        
+    </head>
+    <body>
+        <div id="bar-demo"  style="position: relative; top: 3px; left: 20px;"></div>
+        
+    </body>
+</html>

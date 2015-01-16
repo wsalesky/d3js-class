@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+            <title></title>
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+            <script type='text/javascript' src="http://d3js.org/d3.v3.js"></script>
+            <script type='text/javascript'>
+            //<![CDATA[ 
+            var node;
+            var x=[];
+            var w = 800,
+                m = 20,
+                maxRadius = 18,
+                padding = 100;
+                //// dataset
+                var data0 = [{"genre":"building","size":"19"},{"genre":"church","size":"378"},{"genre":"diocese","size":"188"},{"genre":"fortification","size":"6"},{"genre":"island","size":"5"},{"genre":"monastery","size":"255"},{"genre":"mountain","size":"21"},{"genre":"open water","size":"7"},{"genre":"parish","size":"2"},{"genre":"province","size":"23"},{"genre":"quarter","size":"6"},{"genre":"region","size":"173"},{"genre":"river","size":"19"},{"genre":"settlement","size":"1333"},{"genre":"state","size":"16"},{"genre":"temple","size":"1"},{"genre":"unknown","size":"10"}]
+                //[{"size":1,"genre":"Fantasy books"},{"size":3,"genre":"Novels"},{"size":2,"genre":"Science fiction"},{"size":5,"genre":"History books"},{"size":3,"genre":"Non-fiction"},{"size":2,"genre":"Romance"},{"size":7,"genre":"Horror"},{"size":1,"genre":"Action"}];
+            var tree;
+            var svg;
+            $(window).load(function() { /// jQuery function that starts after window loads.
+            var dataTree0 = {
+                children: data0.map(function(d) { return { size: d.size, genre: d.genre}; })
+            }; 
+            ////transform the array, add children nodes. Check how this array looks in the console.
+            //Open the next line in this file, save your file and check it in a browser.
+            //console.log(dataTree0);
+            //Check the console. Check properties of the object. Check how x and y are assigned.
+            initialize(data0,dataTree0); 
+            ////initialize chart drawing functions. Pass data to the chart-drawing function.
+            });
+            
+            function initialize(data,dataTree) {
+            // size scale for data
+            var radiusScale = d3.scale.sqrt()
+            ///d3.scale.sqrt() scale maps input values (defined by .domain()) to output values (defined by .range()). So
+            ///d3.scale.sqrt()   
+            ///.domain([0, d3.max(data,function(d) {return d.size;})]).range([0, maxRadius]);
+            ///The scale only affects the distribution of values within the range. For the sqrt function, 
+            ///the growth is sub-linear, which means that more of the input values will fall into the latter part of the output range.
+            ///Like other power scales (e.g.,pow, log), sqrt used for exponentially increasing values.
+            ///To have a better unerstanding how square root scale distributes values, find sqrt scale 
+            ///on this chart: http://bl.ocks.org/GerHobbelt/3605124.
+                .domain([0, d3.max(data,function(d) {return d.size;})])
+                .range([0, maxRadius]);
+            
+            // determine the appropriate radius for the circle
+            var roughCircumference = d3.sum(data.map(radiusScale)) * 2 +
+                padding * (data.length - 1),
+                radius = roughCircumference / (Math.PI * 2);
+            
+            //var colors = d3.scale.category20b();
+            var color1 = d3.scale.ordinal()
+                .domain(data,function(d) {return d.genre;})
+                .range(["#30c514", "#9321ff", "#30c522", "#30c"]);
+            var color1 = d3.scale.linear()
+                .domain([0, d3.max(data,function(d) {return d.size;})])
+                .range(["red", "yellow", "green"]);
+            var color2 = d3.scale.linear()
+                .domain([0, d3.max(data,function(d) {return d.size;})])
+                .range(["red","blue"]);
+            var p=d3.scale.category20c();     
+            var r=p.range();    
+            var color3 = d3.scale.linear()
+                .domain([0, d3.max(data,function(d) {return d.size;})])
+                .range(r);  
+            var colors = d3.scale.linear()
+                .domain([0, d3.max(data,function(d) {return d.size;})])
+                .range(["steelblue", "red"])
+                .interpolate(d3.interpolateHcl);
+                //.range([d3.hsl(0, 0, .6), d3.hsl(0, .5, .2)]);                  
+            // make a radial tree layout
+            tree = d3.layout.tree()
+                .size([360, radius])   ////change the first number in this range (e.g.,set it to 120). See what happens. 
+                .separation(function(a, b) {
+                    return radiusScale(a.size) + radiusScale(b.size);
+                });
+            
+            //Make the svg
+            svg = d3.select("#rotate").append("svg")
+                .attr("width", w + m * 2)
+                .attr("height", w + m * 2)
+              .append("g")
+                .attr("transform", "translate(" + (w / 2 + m) + "," + (w / 2 + m) + ")");
+            
+            //Apply the layout to the data. Define nodes
+            var nodes = tree.nodes(dataTree);
+            //It is possible to define lines between nodes in this layout.
+            /// See what is required for lines here: http://strongriley.github.io/d3/ex/tree.html
+            
+            
+            //Create dom elements for the node
+            node = svg.selectAll(".node")
+                  .data(nodes.slice(1)) // cut out the root node, we don't need it. The radius for this node is undefined
+                .enter().append("g")
+                  .attr("class", "node")
+                  .attr("transform", function(d) {
+                      return "rotate(" + (d.x - 90) + ") translate(" + d.y + ")";
+                  });
+            
+            /// add class .circle
+            node.append("circle")
+            ////add scales radius size
+                .attr("r", function(d) { return radiusScale(d.size/2); })
+                .attr("fill", function(d) { return colors(d.size); }); /// add fill color for cicles
+            
+            /// Add text to the nodes
+            node.append("text")
+              .attr("x", -12) // define absolute x position for text
+              .attr("dy", ".35em") /// define relative dy position for text (relative to x).
+              .text(function(d) { return d.genre; }); /// text labels
+            }
+            
+            
+            //]]>  
+             
+    </script>
+    </head>
+    <body>
+        <div id="rotate"></div>
+    </body>
+</html>
