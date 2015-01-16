@@ -1,0 +1,4497 @@
+[
+    {
+        "source": "spear633-1",
+        "target": "http://syriaca.org/person/Severus",
+        "type": "person"
+    },
+    {
+        "source": "spear633-1.1",
+        "target": "http://syriaca.org/person/Severus",
+        "type": "person"
+    },
+    {
+        "source": "spear633-2",
+        "target": "http://syriaca.org/person/AbgarVIII",
+        "type": "person"
+    },
+    {
+        "source": "spear633-2.1",
+        "target": "http://syriaca.org/person/AbgarVIII",
+        "type": "person"
+    },
+    {
+        "source": "spear633-2.1",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-3",
+        "target": "http://syriaca.org/person/Maʿnu",
+        "type": "person"
+    },
+    {
+        "source": "spear633-4",
+        "target": "http://syriaca.org/person/Maʿnu",
+        "type": "person"
+    },
+    {
+        "source": "spear633-4.1",
+        "target": "http://syriaca.org/person/Maʿnu",
+        "type": "person"
+    },
+    {
+        "source": "spear633-4.1",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-6",
+        "target": "http://syriaca.org/person/AbgarVIII",
+        "type": "person"
+    },
+    {
+        "source": "spear633-7",
+        "target": "http://syriaca.org/keyword/naturalDisaster",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-7",
+        "target": "http://syriaca.org/place/191",
+        "type": "place"
+    },
+    {
+        "source": "spear633-7",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-7",
+        "target": "http://syriaca.org/person/AbgarVIII",
+        "type": "person"
+    },
+    {
+        "source": "spear633-8",
+        "target": "http://syriaca.org/person/Anonymi1",
+        "type": "person"
+    },
+    {
+        "source": "spear633-8",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-9",
+        "target": "http://syriaca.org/person/Anonymi1",
+        "type": "person"
+    },
+    {
+        "source": "spear633-9",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-10",
+        "target": "http://syriaca.org/person/Anonymi2",
+        "type": "person"
+    },
+    {
+        "source": "spear633-10",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-11",
+        "target": "http://syriaca.org/keyword/decree",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-11",
+        "target": "http://syriaca.org/person/AbgarVIII",
+        "type": "person"
+    },
+    {
+        "source": "spear633-11",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-12",
+        "target": "http://syriaca.org/person/Anonymi3",
+        "type": "person"
+    },
+    {
+        "source": "spear633-13",
+        "target": "http://syriaca.org/keyword/naturalDisaster",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-13",
+        "target": "http://syriaca.org/person/Anonymi3",
+        "type": "person"
+    },
+    {
+        "source": "spear633-13",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-13",
+        "target": "http://syriaca.org/place/191",
+        "type": "place"
+    },
+    {
+        "source": "spear633-14",
+        "target": "http://syriaca.org/person/Anonymi4",
+        "type": "person"
+    },
+    {
+        "source": "spear633-14",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-15",
+        "target": "http://syriaca.org/person/Anonymi4",
+        "type": "person"
+    },
+    {
+        "source": "spear633-15",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-17",
+        "target": "http://syriaca.org/keyword/decree",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-17",
+        "target": "http://syriaca.org/person/AbgarVIII",
+        "type": "person"
+    },
+    {
+        "source": "spear633-17",
+        "target": "http://syriaca.org/person/Anonymi4",
+        "type": "person"
+    },
+    {
+        "source": "spear633-17",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-17",
+        "target": "http://syriaca.org/place/191",
+        "type": "place"
+    },
+    {
+        "source": "spear633-18",
+        "target": "http://syriaca.org/person/Anonymi5",
+        "type": "person"
+    },
+    {
+        "source": "spear633-18",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-19",
+        "target": "http://syriaca.org/person/Anonymi5",
+        "type": "person"
+    },
+    {
+        "source": "spear633-19",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-20",
+        "target": "http://syriaca.org/person/Anonymi6",
+        "type": "person"
+    },
+    {
+        "source": "spear633-20",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-22",
+        "target": "http://syriaca.org/person/Anonymi7",
+        "type": "person"
+    },
+    {
+        "source": "spear633-22",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-23",
+        "target": "http://syriaca.org/person/Anonymi7",
+        "type": "person"
+    },
+    {
+        "source": "spear633-23",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-24",
+        "target": "http://syriaca.org/keyword/decree",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-24",
+        "target": "http://syriaca.org/person/AbgarVIII",
+        "type": "person"
+    },
+    {
+        "source": "spear633-24",
+        "target": "http://syriaca.org/person/Anonymi6",
+        "type": "person"
+    },
+    {
+        "source": "spear633-24",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-25",
+        "target": "http://syriaca.org/keyword/architecture http://syriaca.org/keyword/decree",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-25",
+        "target": "http://syriaca.org/person/AbgarVIII",
+        "type": "person"
+    },
+    {
+        "source": "spear633-25",
+        "target": "http://syriaca.org/place/Winter-royal-residence@Tabara",
+        "type": "place"
+    },
+    {
+        "source": "spear633-26",
+        "target": "http://syriaca.org/person/Anonymi8",
+        "type": "person"
+    },
+    {
+        "source": "spear633-26",
+        "target": "http://syriaca.org/person/AbgarVIII",
+        "type": "person"
+    },
+    {
+        "source": "spear633-26",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-29",
+        "target": "http://syriaca.org/person/Anonymi8",
+        "type": "person"
+    },
+    {
+        "source": "spear633-29",
+        "target": "http://syriaca.org/person/AbgarVIII",
+        "type": "person"
+    },
+    {
+        "source": "spear633-29",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-31",
+        "target": "http://syriaca.org/keyword/decree",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-31",
+        "target": "http://syriaca.org/person/AbgarVIII",
+        "type": "person"
+    },
+    {
+        "source": "spear633-31",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-32",
+        "target": "http://syriaca.org/person/Yahab",
+        "type": "person"
+    },
+    {
+        "source": "spear633-33",
+        "target": "http://syriaca.org/person/Yahab",
+        "type": "person"
+    },
+    {
+        "source": "spear633-33",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-34",
+        "target": "http://syriaca.org/person/Kaiuma",
+        "type": "person"
+    },
+    {
+        "source": "spear633-35",
+        "target": "http://syriaca.org/person/Kaiuma",
+        "type": "person"
+    },
+    {
+        "source": "spear633-35",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-36",
+        "target": "http://syriaca.org/person/BarDin",
+        "type": "person"
+    },
+    {
+        "source": "spear633-38",
+        "target": "http://syriaca.org/person/BarDin",
+        "type": "person"
+    },
+    {
+        "source": "spear633-38",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-39",
+        "target": "http://syriaca.org/person/Bulid",
+        "type": "person"
+    },
+    {
+        "source": "spear633-41",
+        "target": "http://syriaca.org/person/Bulid",
+        "type": "person"
+    },
+    {
+        "source": "spear633-41",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-42",
+        "target": "http://syriaca.org/keyword/writing",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-42",
+        "target": "http://syriaca.org/person/Yahab",
+        "type": "person"
+    },
+    {
+        "source": "spear633-42",
+        "target": "http://syriaca.org/person/Kaiuma",
+        "type": "person"
+    },
+    {
+        "source": "spear633-42",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-43",
+        "target": "http://syriaca.org/keyword/writing",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-43",
+        "target": "http://syriaca.org/person/BarDin",
+        "type": "person"
+    },
+    {
+        "source": "spear633-43",
+        "target": "http://syriaca.org/person/Bulid",
+        "type": "person"
+    },
+    {
+        "source": "spear633-43",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-44",
+        "target": "http://syriaca.org/keyword/governance",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-44",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-45",
+        "target": "http://syriaca.org/person/Augustus",
+        "type": "person"
+    },
+    {
+        "source": "spear633-45.1",
+        "target": "http://syriaca.org/person/Augustus",
+        "type": "person"
+    },
+    {
+        "source": "spear633-45.1",
+        "target": "http://syriaca.org/place/166",
+        "type": "place"
+    },
+    {
+        "source": "spear633-46",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-46",
+        "target": "http://syriaca.org/person/Augustus",
+        "type": "person"
+    },
+    {
+        "source": "spear633-46",
+        "target": "http://syriaca.org/place/166",
+        "type": "place"
+    },
+    {
+        "source": "spear633-47",
+        "target": "http://syriaca.org/person/Christ",
+        "type": "person"
+    },
+    {
+        "source": "spear633-48",
+        "target": "http://syriaca.org/person/Christ",
+        "type": "person"
+    },
+    {
+        "source": "spear633-49",
+        "target": "http://syriaca.org/keyword/birth",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-49",
+        "target": "http://syriaca.org/person/Christ",
+        "type": "person"
+    },
+    {
+        "source": "spear633-50",
+        "target": "http://syriaca.org/person/AbgarVI",
+        "type": "person"
+    },
+    {
+        "source": "spear633-51",
+        "target": "http://syriaca.org/person/AbgarVI",
+        "type": "person"
+    },
+    {
+        "source": "spear633-51",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-52",
+        "target": "http://syriaca.org/keyword/architecture http://syriaca.org/keyword/governance",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-52",
+        "target": "http://syriaca.org/person/AbgarVI",
+        "type": "person"
+    },
+    {
+        "source": "spear633-53",
+        "target": "http://syriaca.org/person/616",
+        "type": "person"
+    },
+    {
+        "source": "spear633-54",
+        "target": "http://syriaca.org/keyword/apostasy",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-54",
+        "target": "http://syriaca.org/person/616",
+        "type": "person"
+    },
+    {
+        "source": "spear633-55",
+        "target": "http://syriaca.org/person/3",
+        "type": "person"
+    },
+    {
+        "source": "spear633-56",
+        "target": "http://syriaca.org/person/3",
+        "type": "person"
+    },
+    {
+        "source": "spear633-57",
+        "target": "http://syriaca.org/keyword/birth",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-57",
+        "target": "http://syriaca.org/person/3",
+        "type": "person"
+    },
+    {
+        "source": "spear633-58",
+        "target": "http://syriaca.org/person/LuciusVerus",
+        "type": "person"
+    },
+    {
+        "source": "spear633-60",
+        "target": "http://syriaca.org/keyword/war http://syriaca.org/keyword/violence",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-60",
+        "target": "http://syriaca.org/person/LuciusVerus",
+        "type": "person"
+    },
+    {
+        "source": "spear633-60",
+        "target": "http://syriaca.org/person/Commodus",
+        "type": "person"
+    },
+    {
+        "source": "spear633-61",
+        "target": "http://syriaca.org/keyword/architecture",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-61",
+        "target": "http://syriaca.org/person/AbgarVIII",
+        "type": "person"
+    },
+    {
+        "source": "spear633-61",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-62",
+        "target": "http://syriaca.org/person/608",
+        "type": "person"
+    },
+    {
+        "source": "spear633-63",
+        "target": "http://syriaca.org/person/608",
+        "type": "person"
+    },
+    {
+        "source": "spear633-64",
+        "target": "http://syriaca.org/person/608",
+        "type": "person"
+    },
+    {
+        "source": "spear633-65",
+        "target": "http://syriaca.org/keyword/birth",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-65",
+        "target": "http://syriaca.org/person/608",
+        "type": "person"
+    },
+    {
+        "source": "spear633-66",
+        "target": "http://syriaca.org/keyword/naturalDisaster",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-66",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-67",
+        "target": "http://syriaca.org/person/Diocletian",
+        "type": "person"
+    },
+    {
+        "source": "spear633-68",
+        "target": "http://syriaca.org/person/Conon",
+        "type": "person"
+    },
+    {
+        "source": "spear633-68",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-69",
+        "target": "http://syriaca.org/person/Conon",
+        "type": "person"
+    },
+    {
+        "source": "spear633-69",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-70",
+        "target": "http://syriaca.org/person/Shaʿd",
+        "type": "person"
+    },
+    {
+        "source": "spear633-70",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-71",
+        "target": "http://syriaca.org/keyword/architecture http://syriaca.org/keyword/sacredSite",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-71",
+        "target": "http://syriaca.org/person/Conon",
+        "type": "person"
+    },
+    {
+        "source": "spear633-71",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-72",
+        "target": "http://syriaca.org/keyword/sacredSite http://syriaca.org/keyword/architecture",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-72",
+        "target": "http://syriaca.org/person/Shaʿd",
+        "type": "person"
+    },
+    {
+        "source": "spear633-72",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-73",
+        "target": "http://syriaca.org/person/326",
+        "type": "person"
+    },
+    {
+        "source": "spear633-73",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-74",
+        "target": "http://syriaca.org/person/326",
+        "type": "person"
+    },
+    {
+        "source": "spear633-74",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-75",
+        "target": "http://syriaca.org/person/326",
+        "type": "person"
+    },
+    {
+        "source": "spear633-75",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-76",
+        "target": "http://syriaca.org/keyword/architecture",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-76",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-77",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-77",
+        "target": "http://syriaca.org/person/326",
+        "type": "person"
+    },
+    {
+        "source": "spear633-77",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-78",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-78",
+        "target": "http://syriaca.org/person/326",
+        "type": "person"
+    },
+    {
+        "source": "spear633-78",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-79",
+        "target": "http://syriaca.org/keyword/sacredSite http://syriaca.org/keyword/architecture",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-79",
+        "target": "http://syriaca.org/person/326",
+        "type": "person"
+    },
+    {
+        "source": "spear633-79",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-80",
+        "target": "http://syriaca.org/keyword/sacredSite http://syriaca.org/keyword/architecture",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-80",
+        "target": "http://syriaca.org/person/326",
+        "type": "person"
+    },
+    {
+        "source": "spear633-80",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-81",
+        "target": "http://syriaca.org/keyword/synod",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-81",
+        "target": "http://syriaca.org/place/621",
+        "type": "place"
+    },
+    {
+        "source": "spear633-82",
+        "target": "http://syriaca.org/keyword/architecture http://syriaca.org/keyword/sacredSite",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-82",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-83",
+        "target": "http://syriaca.org/person/811",
+        "type": "person"
+    },
+    {
+        "source": "spear633-83",
+        "target": "http://syriaca.org/place/142",
+        "type": "place"
+    },
+    {
+        "source": "spear633-84",
+        "target": "http://syriaca.org/person/811",
+        "type": "person"
+    },
+    {
+        "source": "spear633-84",
+        "target": "http://syriaca.org/place/142",
+        "type": "place"
+    },
+    {
+        "source": "spear633-85",
+        "target": "http://syriaca.org/person/811",
+        "type": "person"
+    },
+    {
+        "source": "spear633-86",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-86",
+        "target": "http://syriaca.org/person/811",
+        "type": "person"
+    },
+    {
+        "source": "spear633-87",
+        "target": "http://syriaca.org/person/Abraham",
+        "type": "person"
+    },
+    {
+        "source": "spear633-88",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-88",
+        "target": "http://syriaca.org/person/Abraham",
+        "type": "person"
+    },
+    {
+        "source": "spear633-88",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-89",
+        "target": "http://syriaca.org/person/Abraham",
+        "type": "person"
+    },
+    {
+        "source": "spear633-89",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-90",
+        "target": "http://syriaca.org/keyword/architecture http://syriaca.org/keyword/sacredSite http://syriaca.org/keyword/cultOfSaints",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-90",
+        "target": "http://syriaca.org/person/Abraham",
+        "type": "person"
+    },
+    {
+        "source": "spear633-90",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-91",
+        "target": "http://syriaca.org/person/Constantius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-92",
+        "target": "http://syriaca.org/person/Constantine",
+        "type": "person"
+    },
+    {
+        "source": "spear633-94",
+        "target": "http://syriaca.org/keyword/architecture",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-94",
+        "target": "http://syriaca.org/person/Constantius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-94",
+        "target": "http://syriaca.org/place/8",
+        "type": "place"
+    },
+    {
+        "source": "spear633-95",
+        "target": "http://syriaca.org/keyword/architecture",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-95",
+        "target": "http://syriaca.org/person/Constantius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-95",
+        "target": "http://syriaca.org/place/200",
+        "type": "place"
+    },
+    {
+        "source": "spear633-96",
+        "target": "http://syriaca.org/person/AbrahamQidunaya",
+        "type": "person"
+    },
+    {
+        "source": "spear633-97",
+        "target": "http://syriaca.org/person/AbrahamQidunaya",
+        "type": "person"
+    },
+    {
+        "source": "spear633-97",
+        "target": "http://syriaca.org/place/Qiduna",
+        "type": "place"
+    },
+    {
+        "source": "spear633-98",
+        "target": "http://syriaca.org/person/AbrahamQidunaya",
+        "type": "person"
+    },
+    {
+        "source": "spear633-99",
+        "target": "http://syriaca.org/person/AbrahamQidunaya",
+        "type": "person"
+    },
+    {
+        "source": "spear633-99",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-100",
+        "target": "http://syriaca.org/person/Abraham",
+        "type": "person"
+    },
+    {
+        "source": "spear633-100",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-101",
+        "target": "http://syriaca.org/person/Abraham",
+        "type": "person"
+    },
+    {
+        "source": "spear633-102",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-102",
+        "target": "http://syriaca.org/person/Abraham",
+        "type": "person"
+    },
+    {
+        "source": "spear633-103",
+        "target": "http://syriaca.org/person/Vologesh",
+        "type": "person"
+    },
+    {
+        "source": "spear633-103",
+        "target": " http://syriaca.org/place/142",
+        "type": "place"
+    },
+    {
+        "source": "spear633-104",
+        "target": "http://syriaca.org/person/Vologesh",
+        "type": "person"
+    },
+    {
+        "source": "spear633-105",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-105",
+        "target": "http://syriaca.org/person/Vologesh",
+        "type": "person"
+    },
+    {
+        "source": "spear633-106",
+        "target": "http://syriaca.org/person/Barṣā",
+        "type": "person"
+    },
+    {
+        "source": "spear633-107",
+        "target": "http://syriaca.org/person/Barṣā",
+        "type": "person"
+    },
+    {
+        "source": "spear633-107",
+        "target": "http://syriaca.org/place/216",
+        "type": "place"
+    },
+    {
+        "source": "spear633-108",
+        "target": "http://syriaca.org/person/Barṣā",
+        "type": "person"
+    },
+    {
+        "source": "spear633-108",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-109",
+        "target": "http://syriaca.org/person/Constantius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-109",
+        "target": "http://syriaca.org/person/Barṣā",
+        "type": "person"
+    },
+    {
+        "source": "spear633-109",
+        "target": "http://syriaca.org/place/216",
+        "type": "place"
+    },
+    {
+        "source": "spear633-109",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-110",
+        "target": "http://syriaca.org/place/502",
+        "type": "place"
+    },
+    {
+        "source": "spear633-111",
+        "target": "http://syriaca.org/person/Julian",
+        "type": "person"
+    },
+    {
+        "source": "spear633-112",
+        "target": "http://syriaca.org/keyword/war http://syriaca.org/keyword/violence",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-112",
+        "target": "http://syriaca.org/person/Julian",
+        "type": "person"
+    },
+    {
+        "source": "spear633-112",
+        "target": "http://syriaca.org/place/150",
+        "type": "place"
+    },
+    {
+        "source": "spear633-113",
+        "target": "http://syriaca.org/person/Julian",
+        "type": "person"
+    },
+    {
+        "source": "spear633-114",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-114",
+        "target": "http://syriaca.org/person/Julian",
+        "type": "person"
+    },
+    {
+        "source": "spear633-115",
+        "target": "http://syriaca.org/person/Valentinian",
+        "type": "person"
+    },
+    {
+        "source": "spear633-116",
+        "target": "http://syriaca.org/person/Valens",
+        "type": "person"
+    },
+    {
+        "source": "spear633-118",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-118",
+        "target": "http://syriaca.org/person/Valentinian",
+        "type": "person"
+    },
+    {
+        "source": "spear633-118",
+        "target": "http://syriaca.org/place/166",
+        "type": "place"
+    },
+    {
+        "source": "spear633-119",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-119",
+        "target": "http://syriaca.org/person/Valens",
+        "type": "person"
+    },
+    {
+        "source": "spear633-119",
+        "target": "http://syriaca.org/place/166",
+        "type": "place"
+    },
+    {
+        "source": "spear633-120",
+        "target": "http://syriaca.org/person/JulianSaba",
+        "type": "person"
+    },
+    {
+        "source": "spear633-121",
+        "target": "http://syriaca.org/person/JulianSaba",
+        "type": "person"
+    },
+    {
+        "source": "spear633-122",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-122",
+        "target": "http://syriaca.org/person/JulianSaba",
+        "type": "person"
+    },
+    {
+        "source": "spear633-123",
+        "target": "http://syriaca.org/keyword/sacredSite http://syriaca.org/keyword/architecture",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-123",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-124",
+        "target": "http://syriaca.org/person/13",
+        "type": "person"
+    },
+    {
+        "source": "spear633-125",
+        "target": "http://syriaca.org/person/13",
+        "type": "person"
+    },
+    {
+        "source": "spear633-126",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-126",
+        "target": "http://syriaca.org/person/13",
+        "type": "person"
+    },
+    {
+        "source": "spear633-127",
+        "target": "http://syriaca.org/person/Anonymi09",
+        "type": "person"
+    },
+    {
+        "source": "spear633-127",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-127",
+        "target": "http://syriaca.org/person/Anonymi10",
+        "type": "person"
+    },
+    {
+        "source": "spear633-128",
+        "target": "http://syriaca.org/person/Anonymi10",
+        "type": "person"
+    },
+    {
+        "source": "spear633-128",
+        "target": "http://syriaca.org/person/Anonymi09",
+        "type": "person"
+    },
+    {
+        "source": "spear633-128",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-129",
+        "target": "http://syriaca.org/keyword/persecution http://syriaca.org/keyword/sacredSite",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-129",
+        "target": "http://syriaca.org/person/Anonymi09",
+        "type": "person"
+    },
+    {
+        "source": "spear633-129",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-129",
+        "target": "http://syriaca.org/person/Anonymi10",
+        "type": "person"
+    },
+    {
+        "source": "spear633-130",
+        "target": "http://syriaca.org/person/Barsā",
+        "type": "person"
+    },
+    {
+        "source": "spear633-130",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-131",
+        "target": "http://syriaca.org/person/Barsā",
+        "type": "person"
+    },
+    {
+        "source": "spear633-131",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-132",
+        "target": "http://syriaca.org/person/Barsā",
+        "type": "person"
+    },
+    {
+        "source": "spear633-132",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-134",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-134",
+        "target": "http://syriaca.org/person/Barsā",
+        "type": "person"
+    },
+    {
+        "source": "spear633-135",
+        "target": "http://syriaca.org/person/Anonymi09",
+        "type": "person"
+    },
+    {
+        "source": "spear633-135",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-136",
+        "target": "http://syriaca.org/keyword/sacredSite",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-136",
+        "target": "http://syriaca.org/person/Anonymi09",
+        "type": "person"
+    },
+    {
+        "source": "spear633-136",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-137",
+        "target": "http://syriaca.org/person/Eulogios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-138",
+        "target": "http://syriaca.org/person/Eulogios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-139",
+        "target": "http://syriaca.org/person/Eulogios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-139",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-140",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-140",
+        "target": "http://syriaca.org/person/Eulogios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-140",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-141",
+        "target": "http://syriaca.org/person/EmperorTheodosius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-142",
+        "target": "http://syriaca.org/person/EmperorTheodosius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-142",
+        "target": "http://syriaca.org/place/166",
+        "type": "place"
+    },
+    {
+        "source": "spear633-143",
+        "target": "http://syriaca.org/person/Daniel",
+        "type": "person"
+    },
+    {
+        "source": "spear633-144",
+        "target": "http://syriaca.org/person/Demet-or-Demetrios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-145",
+        "target": "http://syriaca.org/keyword/sacredSite http://syriaca.org/keyword/architecture",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-145",
+        "target": "http://syriaca.org/person/Eulogios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-145",
+        "target": "http://syriaca.org/person/Daniel",
+        "type": "person"
+    },
+    {
+        "source": "spear633-145",
+        "target": "http://syriaca.org/person/Demet-or-Demetrios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-146",
+        "target": "http://syriaca.org/keyword/architecture",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-146",
+        "target": "http://syriaca.org/person/EmperorTheodosius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-146",
+        "target": "http://syriaca.org/place/172",
+        "type": "place"
+    },
+    {
+        "source": "spear633-146",
+        "target": "http://syriaca.org/place/145",
+        "type": "place"
+    },
+    {
+        "source": "spear633-147",
+        "target": "http://syriaca.org/person/Anonymi11",
+        "type": "person"
+    },
+    {
+        "source": "spear633-147",
+        "target": "http://syriaca.org/place/586",
+        "type": "place"
+    },
+    {
+        "source": "spear633-148",
+        "target": "http://syriaca.org/keyword/synod",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-148",
+        "target": "http://syriaca.org/person/Anonymi11",
+        "type": "person"
+    },
+    {
+        "source": "spear633-148",
+        "target": "http://syriaca.org/place/586",
+        "type": "place"
+    },
+    {
+        "source": "spear633-149",
+        "target": "http://syriaca.org/person/Eulogios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-150",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-150",
+        "target": "http://syriaca.org/person/Eulogios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-151",
+        "target": "http://syriaca.org/person/Thomas",
+        "type": "person"
+    },
+    {
+        "source": "spear633-152",
+        "target": "http://syriaca.org/person/CyrusI",
+        "type": "person"
+    },
+    {
+        "source": "spear633-153",
+        "target": "http://syriaca.org/person/CyrusI",
+        "type": "person"
+    },
+    {
+        "source": "spear633-153",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-154",
+        "target": "http://syriaca.org/keyword/cultOfSaints",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-154",
+        "target": "http://syriaca.org/person/Thomas",
+        "type": "person"
+    },
+    {
+        "source": "spear633-155",
+        "target": "http://syriaca.org/person/EmperorTheodosius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-156",
+        "target": "http://syriaca.org/person/EmperorTheodosius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-157",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-157",
+        "target": "http://syriaca.org/person/EmperorTheodosius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-158",
+        "target": "http://syriaca.org/person/EmperorArcadius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-159",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-159",
+        "target": "http://syriaca.org/person/EmperorArcadius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-159",
+        "target": "http://syriaca.org/place/586",
+        "type": "place"
+    },
+    {
+        "source": "spear633-160",
+        "target": "http://syriaca.org/person/EmperorTheodosius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-160",
+        "target": "http://syriaca.org/place/586",
+        "type": "place"
+    },
+    {
+        "source": "spear633-161",
+        "target": "http://syriaca.org/person/Huns",
+        "type": "person"
+    },
+    {
+        "source": "spear633-162",
+        "target": "http://syriaca.org/person/Huns",
+        "type": "person"
+    },
+    {
+        "source": "spear633-162",
+        "target": "http://syriaca.org/place/166",
+        "type": "place"
+    },
+    {
+        "source": "spear633-163",
+        "target": "http://syriaca.org/person/CyrusI",
+        "type": "person"
+    },
+    {
+        "source": "spear633-164",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-164",
+        "target": "http://syriaca.org/person/CyrusI",
+        "type": "person"
+    },
+    {
+        "source": "spear633-165",
+        "target": "http://syriaca.org/person/Silwano",
+        "type": "person"
+    },
+    {
+        "source": "spear633-166",
+        "target": "http://syriaca.org/person/Silwano",
+        "type": "person"
+    },
+    {
+        "source": "spear633-167",
+        "target": "http://syriaca.org/person/Silwano",
+        "type": "person"
+    },
+    {
+        "source": "spear633-167",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-168",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-168",
+        "target": "http://syriaca.org/person/Silwano",
+        "type": "person"
+    },
+    {
+        "source": "spear633-168",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-169",
+        "target": "http://syriaca.org/person/Silwanoo",
+        "type": "person"
+    },
+    {
+        "source": "spear633-169",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-170",
+        "target": "http://syriaca.org/person/Silwano",
+        "type": "person"
+    },
+    {
+        "source": "spear633-170",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-171",
+        "target": "http://syriaca.org/person/Silwano",
+        "type": "person"
+    },
+    {
+        "source": "spear633-172",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-172",
+        "target": "http://syriaca.org/person/Silwano",
+        "type": "person"
+    },
+    {
+        "source": "spear633-173",
+        "target": "http://syriaca.org/person/Pakida",
+        "type": "person"
+    },
+    {
+        "source": "spear633-174",
+        "target": "http://syriaca.org/person/Pakida",
+        "type": "person"
+    },
+    {
+        "source": "spear633-174",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-175",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-175",
+        "target": "http://syriaca.org/person/Pakida",
+        "type": "person"
+    },
+    {
+        "source": "spear633-175",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-177",
+        "target": "http://syriaca.org/person/573",
+        "type": "person"
+    },
+    {
+        "source": "spear633-178",
+        "target": "http://syriaca.org/person/573",
+        "type": "person"
+    },
+    {
+        "source": "spear633-179",
+        "target": "http://syriaca.org/person/573",
+        "type": "person"
+    },
+    {
+        "source": "spear633-179",
+        "target": "http://syriaca.org/place/586",
+        "type": "place"
+    },
+    {
+        "source": "spear633-180",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-180",
+        "target": "http://syriaca.org/person/573",
+        "type": "person"
+    },
+    {
+        "source": "spear633-180",
+        "target": "http://syriaca.org/place/586",
+        "type": "place"
+    },
+    {
+        "source": "spear633-181",
+        "target": " http://syriaca.org/person/780",
+        "type": "person"
+    },
+    {
+        "source": "spear633-181",
+        "target": "http://syriaca.org/place/138",
+        "type": "place"
+    },
+    {
+        "source": "spear633-182",
+        "target": " http://syriaca.org/person/780",
+        "type": "person"
+    },
+    {
+        "source": "spear633-182",
+        "target": "http://syriaca.org/place/138",
+        "type": "place"
+    },
+    {
+        "source": "spear633-183",
+        "target": " http://syriaca.org/person/780",
+        "type": "person"
+    },
+    {
+        "source": "spear633-183",
+        "target": "http://syriaca.org/place/138",
+        "type": "place"
+    },
+    {
+        "source": "spear633-184",
+        "target": " http://syriaca.org/person/780",
+        "type": "person"
+    },
+    {
+        "source": "spear633-184",
+        "target": "http://syriaca.org/place/138",
+        "type": "place"
+    },
+    {
+        "source": "spear633-185",
+        "target": "http://syriaca.org/person/16",
+        "type": "person"
+    },
+    {
+        "source": "spear633-186",
+        "target": "http://syriaca.org/person/16",
+        "type": "person"
+    },
+    {
+        "source": "spear633-187",
+        "target": "http://syriaca.org/person/16",
+        "type": "person"
+    },
+    {
+        "source": "spear633-187",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-188",
+        "target": "http://syriaca.org/person/Anonymous1",
+        "type": "person"
+    },
+    {
+        "source": "spear633-188",
+        "target": "http://syriaca.org/person/13",
+        "type": "person"
+    },
+    {
+        "source": "spear633-192",
+        "target": "http://syriaca.org/keyword/writing",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-192",
+        "target": "http://syriaca.org/person/16",
+        "type": "person"
+    },
+    {
+        "source": "spear633-192",
+        "target": "http://syriaca.org/person/Huns",
+        "type": "person"
+    },
+    {
+        "source": "spear633-192",
+        "target": "http://syriaca.org/place/166",
+        "type": "place"
+    },
+    {
+        "source": "spear633-193",
+        "target": "http://syriaca.org/person/Diogenes",
+        "type": "person"
+    },
+    {
+        "source": "spear633-194",
+        "target": "http://syriaca.org/person/Diogenes",
+        "type": "person"
+    },
+    {
+        "source": "spear633-195",
+        "target": "http://syriaca.org/person/Barlāhā",
+        "type": "person"
+    },
+    {
+        "source": "spear633-196",
+        "target": "http://syriaca.org/person/Barlāhā",
+        "type": "person"
+    },
+    {
+        "source": "spear633-197",
+        "target": "http://syriaca.org/person/Diogenes",
+        "type": "person"
+    },
+    {
+        "source": "spear633-197",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-198",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-198",
+        "target": "http://syriaca.org/person/Diogenes",
+        "type": "person"
+    },
+    {
+        "source": "spear633-198",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-199",
+        "target": "http://syriaca.org/keyword/architecture http://syriaca.org/keyword/sacredSite http://syriaca.org/keyword/cultOfSaints",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-199",
+        "target": "http://syriaca.org/person/Diogenes",
+        "type": "person"
+    },
+    {
+        "source": "spear633-199",
+        "target": "http://syriaca.org/person/Barlāhā",
+        "type": "person"
+    },
+    {
+        "source": "spear633-200",
+        "target": "http://syriaca.org/person/Pakida",
+        "type": "person"
+    },
+    {
+        "source": "spear633-201",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-201",
+        "target": "http://syriaca.org/person/Pakida",
+        "type": "person"
+    },
+    {
+        "source": "spear633-202",
+        "target": "http://syriaca.org/person/430",
+        "type": "person"
+    },
+    {
+        "source": "spear633-203",
+        "target": "http://syriaca.org/person/430",
+        "type": "person"
+    },
+    {
+        "source": "spear633-204",
+        "target": "http://syriaca.org/person/430",
+        "type": "person"
+    },
+    {
+        "source": "spear633-204",
+        "target": "http://syriaca.org/place/572",
+        "type": "place"
+    },
+    {
+        "source": "spear633-205",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-205",
+        "target": "http://syriaca.org/person/430",
+        "type": "person"
+    },
+    {
+        "source": "spear633-205",
+        "target": "http://syriaca.org/place/572",
+        "type": "place"
+    },
+    {
+        "source": "spear633-206",
+        "target": "http://syriaca.org/person/26",
+        "type": "person"
+    },
+    {
+        "source": "spear633-207",
+        "target": "http://syriaca.org/person/26",
+        "type": "person"
+    },
+    {
+        "source": "spear633-208",
+        "target": "http://syriaca.org/person/26",
+        "type": "person"
+    },
+    {
+        "source": "spear633-208",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-209",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-209",
+        "target": "http://syriaca.org/person/26",
+        "type": "person"
+    },
+    {
+        "source": "spear633-209",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-210",
+        "target": "http://syriaca.org/person/Stephen",
+        "type": "person"
+    },
+    {
+        "source": "spear633-211",
+        "target": "http://syriaca.org/person/Stephen",
+        "type": "person"
+    },
+    {
+        "source": "spear633-212",
+        "target": "http://syriaca.org/person/Anonymi13",
+        "type": "person"
+    },
+    {
+        "source": "spear633-212",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-213",
+        "target": "http://syriaca.org/keyword/architecture http://syriaca.org/keyword/cultOfSaints http://syriaca.org/keyword/sacredSite",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-213",
+        "target": "http://syriaca.org/person/26",
+        "type": "person"
+    },
+    {
+        "source": "spear633-213",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-213",
+        "target": "http://syriaca.org/person/Stephen",
+        "type": "person"
+    },
+    {
+        "source": "spear633-213",
+        "target": "http://syriaca.org/person/Anonymi13",
+        "type": "person"
+    },
+    {
+        "source": "spear633-213",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-215",
+        "target": "http://syriaca.org/keyword/decree",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-215",
+        "target": "http://syriaca.org/place/TheodosiusII",
+        "type": "place"
+    },
+    {
+        "source": "spear633-215",
+        "target": "http://syriaca.org/person/26",
+        "type": "person"
+    },
+    {
+        "source": "spear633-215",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-215",
+        "target": "http://syriaca.org/person/Stephen",
+        "type": "person"
+    },
+    {
+        "source": "spear633-215",
+        "target": "http://syriaca.org/person/Anonymi13",
+        "type": "person"
+    },
+    {
+        "source": "spear633-215",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-216",
+        "target": "http://syriaca.org/keyword/naturalDisaster",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-216",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-217",
+        "target": "http://syriaca.org/person/482",
+        "type": "person"
+    },
+    {
+        "source": "spear633-218",
+        "target": "http://syriaca.org/person/482",
+        "type": "person"
+    },
+    {
+        "source": "spear633-219",
+        "target": "http://syriaca.org/person/482",
+        "type": "person"
+    },
+    {
+        "source": "spear633-220",
+        "target": "http://syriaca.org/person/482",
+        "type": "person"
+    },
+    {
+        "source": "spear633-221",
+        "target": "http://syriaca.org/person/Jacob-the-Mutilated",
+        "type": "person"
+    },
+    {
+        "source": "spear633-222",
+        "target": "http://syriaca.org/keyword/persecution http://syriaca.org/keyword/martyrdom",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-222",
+        "target": "http://syriaca.org/person/Jacob-the-Mutilated",
+        "type": "person"
+    },
+    {
+        "source": "spear633-223",
+        "target": "http://syriaca.org/person/Anonymi14",
+        "type": "person"
+    },
+    {
+        "source": "spear633-224",
+        "target": "http://syriaca.org/keyword/heresy",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-224",
+        "target": "http://syriaca.org/person/Anonymi14",
+        "type": "person"
+    },
+    {
+        "source": "spear633-225",
+        "target": "http://syriaca.org/person/AndrewSamosata",
+        "type": "person"
+    },
+    {
+        "source": "spear633-225",
+        "target": "http://syriaca.org/place/178",
+        "type": "place"
+    },
+    {
+        "source": "spear633-226",
+        "target": "http://syriaca.org/person/AndrewSamosata",
+        "type": "person"
+    },
+    {
+        "source": "spear633-226",
+        "target": "http://syriaca.org/place/178",
+        "type": "place"
+    },
+    {
+        "source": "spear633-227",
+        "target": "http://syriaca.org/person/AndrewSamosata",
+        "type": "person"
+    },
+    {
+        "source": "spear633-227",
+        "target": "http://syriaca.org/place/178",
+        "type": "place"
+    },
+    {
+        "source": "spear633-228",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-228",
+        "target": "http://syriaca.org/person/AndrewSamosata",
+        "type": "person"
+    },
+    {
+        "source": "spear633-228",
+        "target": "http://syriaca.org/place/178",
+        "type": "place"
+    },
+    {
+        "source": "spear633-229",
+        "target": "http://syriaca.org/keyword/naturalDisaster",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-230",
+        "target": "http://syriaca.org/keyword/synod",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-230",
+        "target": "http://syriaca.org/place/623",
+        "type": "place"
+    },
+    {
+        "source": "spear633-231",
+        "target": "http://syriaca.org/person/26",
+        "type": "person"
+    },
+    {
+        "source": "spear633-231",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-232",
+        "target": "http://syriaca.org/person/26",
+        "type": "person"
+    },
+    {
+        "source": "spear633-233",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-233",
+        "target": "http://syriaca.org/person/26",
+        "type": "person"
+    },
+    {
+        "source": "spear633-234",
+        "target": "http://syriaca.org/person/534",
+        "type": "person"
+    },
+    {
+        "source": "spear633-235",
+        "target": "http://syriaca.org/person/534",
+        "type": "person"
+    },
+    {
+        "source": "spear633-235",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-236",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-236",
+        "target": "http://syriaca.org/person/534",
+        "type": "person"
+    },
+    {
+        "source": "spear633-236",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-237",
+        "target": "http://syriaca.org/keyword/architecture http://syriaca.org/keyword/sacredSite",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-237",
+        "target": "http://syriaca.org/person/534",
+        "type": "person"
+    },
+    {
+        "source": "spear633-238",
+        "target": "http://syriaca.org/person/SenatorPLREII990",
+        "type": "person"
+    },
+    {
+        "source": "spear633-239",
+        "target": "http://syriaca.org/keyword/sacredSite",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-239",
+        "target": "http://syriaca.org/person/Senator",
+        "type": "person"
+    },
+    {
+        "source": "spear633-239",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-240",
+        "target": "http://syriaca.org/person/Anatolius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-241",
+        "target": "http://syriaca.org/person/Anatolius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-242",
+        "target": "http://syriaca.org/keyword/cultOfSaints",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-242",
+        "target": "http://syriaca.org/person/Anatolius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-242",
+        "target": "http://syriaca.org/person/Thomas",
+        "type": "person"
+    },
+    {
+        "source": "spear633-243",
+        "target": "http://syriaca.org/person/DioscorusAlexandria",
+        "type": "person"
+    },
+    {
+        "source": "spear633-244",
+        "target": "http://syriaca.org/person/DioscorusAlexandria",
+        "type": "person"
+    },
+    {
+        "source": "spear633-244",
+        "target": "http://syriaca.org/place/572",
+        "type": "place"
+    },
+    {
+        "source": "spear633-245",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-245",
+        "target": "http://syriaca.org/person/DioscorusAlexandria",
+        "type": "person"
+    },
+    {
+        "source": "spear633-245",
+        "target": "http://syriaca.org/place/572",
+        "type": "place"
+    },
+    {
+        "source": "spear633-246",
+        "target": "http://syriaca.org/person/FlavianConstantinople",
+        "type": "person"
+    },
+    {
+        "source": "spear633-246",
+        "target": "http://syriaca.org/place/586",
+        "type": "place"
+    },
+    {
+        "source": "spear633-247",
+        "target": "http://syriaca.org/person/DomnusAntioch",
+        "type": "person"
+    },
+    {
+        "source": "spear633-247",
+        "target": "http://syriaca.org/place/10",
+        "type": "place"
+    },
+    {
+        "source": "spear633-248",
+        "target": "http://syriaca.org/person/IrenaeusTyre",
+        "type": "person"
+    },
+    {
+        "source": "spear633-248",
+        "target": "http://syriaca.org/place/195",
+        "type": "place"
+    },
+    {
+        "source": "spear633-249",
+        "target": "http://syriaca.org/person/EusebiusDorylaeum",
+        "type": "person"
+    },
+    {
+        "source": "spear633-249",
+        "target": "http://syriaca.org/place/Dorylaeum",
+        "type": "place"
+    },
+    {
+        "source": "spear633-250",
+        "target": "http://syriaca.org/person/DanielHarran",
+        "type": "person"
+    },
+    {
+        "source": "spear633-250",
+        "target": "http://syriaca.org/place/216",
+        "type": "place"
+    },
+    {
+        "source": "spear633-251",
+        "target": "http://syriaca.org/person/SophroniusTella",
+        "type": "person"
+    },
+    {
+        "source": "spear633-251",
+        "target": "http://syriaca.org/place/200",
+        "type": "place"
+    },
+    {
+        "source": "spear633-252",
+        "target": "http://syriaca.org/person/TheodoretCyrrhus",
+        "type": "person"
+    },
+    {
+        "source": "spear633-252",
+        "target": "http://syriaca.org/place/65",
+        "type": "place"
+    },
+    {
+        "source": "spear633-253",
+        "target": "http://syriaca.org/keyword/synod",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-253",
+        "target": "http://syriaca.org/place/623",
+        "type": "place"
+    },
+    {
+        "source": "spear633-253",
+        "target": "http://syriaca.org/person/FlavianConstantinople",
+        "type": "person"
+    },
+    {
+        "source": "spear633-253",
+        "target": "http://syriaca.org/place/586",
+        "type": "place"
+    },
+    {
+        "source": "spear633-253",
+        "target": "http://syriaca.org/person/DomnusAntioch",
+        "type": "person"
+    },
+    {
+        "source": "spear633-253",
+        "target": "http://syriaca.org/place/10",
+        "type": "place"
+    },
+    {
+        "source": "spear633-253",
+        "target": "http://syriaca.org/person/IrenaeusTyre",
+        "type": "person"
+    },
+    {
+        "source": "spear633-253",
+        "target": "http://syriaca.org/place/195",
+        "type": "place"
+    },
+    {
+        "source": "spear633-253",
+        "target": "http://syriaca.org/person/534",
+        "type": "person"
+    },
+    {
+        "source": "spear633-253",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-253",
+        "target": "http://syriaca.org/person/EusebiusDorylaeum",
+        "type": "person"
+    },
+    {
+        "source": "spear633-253",
+        "target": "http://syriaca.org/place/Dorylaeum",
+        "type": "place"
+    },
+    {
+        "source": "spear633-253",
+        "target": "http://syriaca.org/person/DanielHarran",
+        "type": "person"
+    },
+    {
+        "source": "spear633-253",
+        "target": "http://syriaca.org/place/216",
+        "type": "place"
+    },
+    {
+        "source": "spear633-253",
+        "target": "http://syriaca.org/person/SophroniusTella",
+        "type": "person"
+    },
+    {
+        "source": "spear633-253",
+        "target": "http://syriaca.org/place/200",
+        "type": "place"
+    },
+    {
+        "source": "spear633-253",
+        "target": "http://syriaca.org/person/TheodoretCyrrhus",
+        "type": "person"
+    },
+    {
+        "source": "spear633-253",
+        "target": "http://syriaca.org/place/65",
+        "type": "place"
+    },
+    {
+        "source": "spear633-254",
+        "target": "http://syriaca.org/person/534",
+        "type": "person"
+    },
+    {
+        "source": "spear633-254",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-255",
+        "target": "http://syriaca.org/person/Nonos",
+        "type": "person"
+    },
+    {
+        "source": "spear633-256",
+        "target": "http://syriaca.org/person/Nonos",
+        "type": "person"
+    },
+    {
+        "source": "spear633-257",
+        "target": "http://syriaca.org/person/Nonos",
+        "type": "person"
+    },
+    {
+        "source": "spear633-257",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-258",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-258",
+        "target": "http://syriaca.org/person/Nonos",
+        "type": "person"
+    },
+    {
+        "source": "spear633-258",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-259",
+        "target": "http://syriaca.org/keyword/architecture http://syriaca.org/keyword/sacredSite",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-259",
+        "target": "http://syriaca.org/person/Nonos",
+        "type": "person"
+    },
+    {
+        "source": "spear633-259",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-260",
+        "target": "http://syriaca.org/person/PopeLeo",
+        "type": "person"
+    },
+    {
+        "source": "spear633-260",
+        "target": "http://syriaca.org/place/641",
+        "type": "place"
+    },
+    {
+        "source": "spear633-261",
+        "target": "http://syriaca.org/person/PopeLeo",
+        "type": "person"
+    },
+    {
+        "source": "spear633-261",
+        "target": "http://syriaca.org/place/641",
+        "type": "place"
+    },
+    {
+        "source": "spear633-262",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-262",
+        "target": "http://syriaca.org/person/PopeLeo",
+        "type": "person"
+    },
+    {
+        "source": "spear633-262",
+        "target": "http://syriaca.org/place/641",
+        "type": "place"
+    },
+    {
+        "source": "spear633-263",
+        "target": "http://syriaca.org/keyword/synod",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-263",
+        "target": "http://syriaca.org/place/622",
+        "type": "place"
+    },
+    {
+        "source": "spear633-264",
+        "target": "http://syriaca.org/person/33",
+        "type": "person"
+    },
+    {
+        "source": "spear633-265",
+        "target": "http://syriaca.org/person/33",
+        "type": "person"
+    },
+    {
+        "source": "spear633-266",
+        "target": "http://syriaca.org/person/33",
+        "type": "person"
+    },
+    {
+        "source": "spear633-267",
+        "target": "http://syriaca.org/person/33",
+        "type": "person"
+    },
+    {
+        "source": "spear633-268",
+        "target": "http://syriaca.org/person/33",
+        "type": "person"
+    },
+    {
+        "source": "spear633-269",
+        "target": "http://syriaca.org/person/534",
+        "type": "person"
+    },
+    {
+        "source": "spear633-270",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-270",
+        "target": "http://syriaca.org/person/534",
+        "type": "person"
+    },
+    {
+        "source": "spear633-271",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-271",
+        "target": "http://syriaca.org/person/Nonos",
+        "type": "person"
+    },
+    {
+        "source": "spear633-271",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-272",
+        "target": "http://syriaca.org/person/JohnBaptist",
+        "type": "person"
+    },
+    {
+        "source": "spear633-273",
+        "target": "http://syriaca.org/person/Anonymi15",
+        "type": "person"
+    },
+    {
+        "source": "spear633-273",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-274",
+        "target": "http://syriaca.org/person/Cosmos",
+        "type": "person"
+    },
+    {
+        "source": "spear633-275",
+        "target": "http://syriaca.org/person/Cosmos",
+        "type": "person"
+    },
+    {
+        "source": "spear633-276",
+        "target": "http://syriaca.org/person/Damian",
+        "type": "person"
+    },
+    {
+        "source": "spear633-277",
+        "target": "http://syriaca.org/keyword/architecture http://syriaca.org/keyword/cultOfSaints http://syriaca.org/keyword/sacredSite",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-277",
+        "target": "http://syriaca.org/person/Nonos",
+        "type": "person"
+    },
+    {
+        "source": "spear633-277",
+        "target": "http://syriaca.org/person/JohnBaptist",
+        "type": "person"
+    },
+    {
+        "source": "spear633-277",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-278",
+        "target": "http://syriaca.org/keyword/architecture",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-278",
+        "target": "http://syriaca.org/person/Nonos",
+        "type": "person"
+    },
+    {
+        "source": "spear633-278",
+        "target": "http://syriaca.org/person/Anonymi15",
+        "type": "person"
+    },
+    {
+        "source": "spear633-278",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-279",
+        "target": "http://syriaca.org/keyword/architecture http://syriaca.org/keyword/sacredSite http://syriaca.org/keyword/cultOfSaints http://syriaca.org/keyword/martyrdom",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-279",
+        "target": "http://syriaca.org/person/Nonos",
+        "type": "person"
+    },
+    {
+        "source": "spear633-279",
+        "target": "http://syriaca.org/person/Cosmos",
+        "type": "person"
+    },
+    {
+        "source": "spear633-279",
+        "target": "http://syriaca.org/person/Damian",
+        "type": "person"
+    },
+    {
+        "source": "spear633-280",
+        "target": "http://syriaca.org/keyword/architecture",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-280",
+        "target": "http://syriaca.org/person/Nonos",
+        "type": "person"
+    },
+    {
+        "source": "spear633-281",
+        "target": "http://syriaca.org/keyword/architecture",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-281",
+        "target": "http://syriaca.org/person/Nonos",
+        "type": "person"
+    },
+    {
+        "source": "spear633-282",
+        "target": "http://syriaca.org/keyword/architecture",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-282",
+        "target": "http://syriaca.org/person/Nonos",
+        "type": "person"
+    },
+    {
+        "source": "spear633-283",
+        "target": "http://syriaca.org/person/Nonos",
+        "type": "person"
+    },
+    {
+        "source": "spear633-284",
+        "target": "http://syriaca.org/person/SimeonStylite",
+        "type": "person"
+    },
+    {
+        "source": "spear633-285",
+        "target": "http://syriaca.org/person/SimeonStylite",
+        "type": "person"
+    },
+    {
+        "source": "spear633-286",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-286",
+        "target": "http://syriaca.org/person/SimeonStylite",
+        "type": "person"
+    },
+    {
+        "source": "spear633-287",
+        "target": "http://syriaca.org/person/EmperorLeo",
+        "type": "person"
+    },
+    {
+        "source": "spear633-288",
+        "target": "http://syriaca.org/keyword/architecture",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-288",
+        "target": "http://syriaca.org/person/EmperorLeo",
+        "type": "person"
+    },
+    {
+        "source": "spear633-288",
+        "target": "http://syriaca.org/place/109",
+        "type": "place"
+    },
+    {
+        "source": "spear633-288",
+        "target": "http://syriaca.org/place/145",
+        "type": "place"
+    },
+    {
+        "source": "spear633-288",
+        "target": "http://syriaca.org/place/109",
+        "type": "place"
+    },
+    {
+        "source": "spear633-289",
+        "target": "http://syriaca.org/person/EmperorLeo",
+        "type": "person"
+    },
+    {
+        "source": "spear633-289",
+        "target": "http://syriaca.org/place/109",
+        "type": "place"
+    },
+    {
+        "source": "spear633-290",
+        "target": "http://syriaca.org/person/Nonos",
+        "type": "person"
+    },
+    {
+        "source": "spear633-291",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-291",
+        "target": "http://syriaca.org/person/Nonos",
+        "type": "person"
+    },
+    {
+        "source": "spear633-292",
+        "target": "http://syriaca.org/person/CyrusII",
+        "type": "person"
+    },
+    {
+        "source": "spear633-293",
+        "target": "http://syriaca.org/person/CyrusII",
+        "type": "person"
+    },
+    {
+        "source": "spear633-293",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-294",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-294",
+        "target": "http://syriaca.org/person/CyrusII",
+        "type": "person"
+    },
+    {
+        "source": "spear633-294",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-295",
+        "target": "http://syriaca.org/person/Leontios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-296",
+        "target": "http://syriaca.org/person/Leontios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-297",
+        "target": "http://syriaca.org/person/EmperorZeno",
+        "type": "person"
+    },
+    {
+        "source": "spear633-298",
+        "target": "http://syriaca.org/person/EmperorZeno",
+        "type": "person"
+    },
+    {
+        "source": "spear633-298",
+        "target": "http://syriaca.org/place/166",
+        "type": "place"
+    },
+    {
+        "source": "spear633-299",
+        "target": "http://syriaca.org/keyword/usurpation",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-299",
+        "target": "http://syriaca.org/person/Leontios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-299",
+        "target": "http://syriaca.org/person/EmperorZeno",
+        "type": "person"
+    },
+    {
+        "source": "spear633-299",
+        "target": "http://syriaca.org/place/10",
+        "type": "place"
+    },
+    {
+        "source": "spear633-300",
+        "target": "http://syriaca.org/person/SchoolPersians",
+        "type": "person"
+    },
+    {
+        "source": "spear633-300",
+        "target": "http://syriaca.org/person/Persians",
+        "type": "person"
+    },
+    {
+        "source": "spear633-301",
+        "target": "http://syriaca.org/keyword/education",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-301",
+        "target": "http://syriaca.org/person/SchoolPersians",
+        "type": "person"
+    },
+    {
+        "source": "spear633-301",
+        "target": "http://syriaca.org/person/Persians",
+        "type": "person"
+    },
+    {
+        "source": "spear633-301",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-302",
+        "target": "http://syriaca.org/person/Anonymi16",
+        "type": "person"
+    },
+    {
+        "source": "spear633-302.1",
+        "target": "http://syriaca.org/person/Anonymi16",
+        "type": "person"
+    },
+    {
+        "source": "spear633-303",
+        "target": "http://syriaca.org/keyword/governance",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-303",
+        "target": "http://syriaca.org/person/Anonymi16",
+        "type": "person"
+    },
+    {
+        "source": "spear633-304",
+        "target": "http://syriaca.org/person/CyrusII",
+        "type": "person"
+    },
+    {
+        "source": "spear633-305",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-305",
+        "target": "http://syriaca.org/person/CyrusII",
+        "type": "person"
+    },
+    {
+        "source": "spear633-306",
+        "target": "http://syriaca.org/person/Peter",
+        "type": "person"
+    },
+    {
+        "source": "spear633-307",
+        "target": "http://syriaca.org/person/Peter",
+        "type": "person"
+    },
+    {
+        "source": "spear633-307",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-308",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-308",
+        "target": "http://syriaca.org/person/Peter",
+        "type": "person"
+    },
+    {
+        "source": "spear633-308",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-309",
+        "target": "http://syriaca.org/person/Anonymi17",
+        "type": "person"
+    },
+    {
+        "source": "spear633-309",
+        "target": "http://syriaca.org/place/Nicopolis/Emmaus",
+        "type": "place"
+    },
+    {
+        "source": "spear633-310",
+        "target": "http://syriaca.org/keyword/naturalDisaster",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-310",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-311",
+        "target": "http://syriaca.org/keyword/naturalDisaster",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-312",
+        "target": "http://syriaca.org/keyword/naturalDisaster",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-312",
+        "target": "http://syriaca.org/place/Abarne",
+        "type": "place"
+    },
+    {
+        "source": "spear633-313",
+        "target": "http://syriaca.org/keyword/naturalDisaster",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-313",
+        "target": "http://syriaca.org/place/Nicopolis/Emmaus",
+        "type": "place"
+    },
+    {
+        "source": "spear633-314",
+        "target": "http://syriaca.org/keyword/naturalDisaster http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-314",
+        "target": "http://syriaca.org/person/Anonymi17",
+        "type": "person"
+    },
+    {
+        "source": "spear633-314",
+        "target": "http://syriaca.org/place/Nicopolis/Emmaus",
+        "type": "place"
+    },
+    {
+        "source": "spear633-316",
+        "target": "http://syriaca.org/person/Anonymous2",
+        "type": "person"
+    },
+    {
+        "source": "spear633-316",
+        "target": "http://syriaca.org/place/Nicopolis/Emmaus",
+        "type": "place"
+    },
+    {
+        "source": "spear633-316.1",
+        "target": "http://syriaca.org/person/Anonymous2",
+        "type": "person"
+    },
+    {
+        "source": "spear633-316.1",
+        "target": "http://syriaca.org/place/Nicopolis/Emmaus",
+        "type": "place"
+    },
+    {
+        "source": "spear633-317",
+        "target": "http://syriaca.org/person/Anonymi18",
+        "type": "person"
+    },
+    {
+        "source": "spear633-317",
+        "target": "http://syriaca.org/place/Nicopolis/Emmaus",
+        "type": "place"
+    },
+    {
+        "source": "spear633-317.1",
+        "target": "http://syriaca.org/person/Anonymi18",
+        "type": "person"
+    },
+    {
+        "source": "spear633-317.1",
+        "target": "http://syriaca.org/place/Nicopolis/Emmaus",
+        "type": "place"
+    },
+    {
+        "source": "spear633-318",
+        "target": "http://syriaca.org/keyword/naturalDisaster http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-318",
+        "target": "http://syriaca.org/person/Anonymous2",
+        "type": "person"
+    },
+    {
+        "source": "spear633-318",
+        "target": "http://syriaca.org/place/Nicopolis/Emmaus",
+        "type": "place"
+    },
+    {
+        "source": "spear633-318",
+        "target": "http://syriaca.org/person/Anonymi18",
+        "type": "person"
+    },
+    {
+        "source": "spear633-318",
+        "target": "http://syriaca.org/place/Nicopolis/Emmaus",
+        "type": "place"
+    },
+    {
+        "source": "spear633-319",
+        "target": "http://syriaca.org/keyword/omen",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-319",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-320",
+        "target": "http://syriaca.org/person/EmperorAnastasios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-321",
+        "target": "http://syriaca.org/person/EmperorAnastasios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-321",
+        "target": "http://syriaca.org/place/166",
+        "type": "place"
+    },
+    {
+        "source": "spear633-322",
+        "target": "http://syriaca.org/person/Euphemius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-323",
+        "target": "http://syriaca.org/person/Euphemius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-323",
+        "target": "http://syriaca.org/place/586",
+        "type": "place"
+    },
+    {
+        "source": "spear633-324",
+        "target": "http://syriaca.org/person/Macedon",
+        "type": "person"
+    },
+    {
+        "source": "spear633-325",
+        "target": "http://syriaca.org/person/Macedon",
+        "type": "person"
+    },
+    {
+        "source": "spear633-325",
+        "target": "http://syriaca.org/place/586",
+        "type": "place"
+    },
+    {
+        "source": "spear633-326",
+        "target": "http://syriaca.org/keyword/deposition",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-326",
+        "target": "http://syriaca.org/person/EmperorAnastasios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-326",
+        "target": "http://syriaca.org/person/Euphemius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-327",
+        "target": "http://syriaca.org/person/Macedon",
+        "type": "person"
+    },
+    {
+        "source": "spear633-327",
+        "target": "http://syriaca.org/place/586",
+        "type": "place"
+    },
+    {
+        "source": "spear633-327",
+        "target": "http://syriaca.org/person/Euphemius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-328",
+        "target": "http://syriaca.org/keyword/naturalDisaster",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-328",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-329",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-330",
+        "target": "http://syriaca.org/person/Kavad",
+        "type": "person"
+    },
+    {
+        "source": "spear633-330",
+        "target": "http://syriaca.org/person/Persians",
+        "type": "person"
+    },
+    {
+        "source": "spear633-331",
+        "target": "http://syriaca.org/person/Kavad",
+        "type": "person"
+    },
+    {
+        "source": "spear633-331",
+        "target": "http://syriaca.org/person/Persians",
+        "type": "person"
+    },
+    {
+        "source": "spear633-323.1",
+        "target": "http://syriaca.org/person/Persians",
+        "type": "person"
+    },
+    {
+        "source": "spear633-332",
+        "target": "http://syriaca.org/keyword/war",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-332",
+        "target": "http://syriaca.org/person/Kavad",
+        "type": "person"
+    },
+    {
+        "source": "spear633-332",
+        "target": "http://syriaca.org/place/8",
+        "type": "place"
+    },
+    {
+        "source": "spear633-333",
+        "target": "http://syriaca.org/keyword/war",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-333",
+        "target": "http://syriaca.org/person/Kavad",
+        "type": "person"
+    },
+    {
+        "source": "spear633-333",
+        "target": "http://syriaca.org/place/8",
+        "type": "place"
+    },
+    {
+        "source": "spear633-334",
+        "target": "http://syriaca.org/person/MarSergios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-335",
+        "target": "http://syriaca.org/person/MarSergios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-336",
+        "target": "http://syriaca.org/keyword/war",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-336",
+        "target": "http://syriaca.org/person/Kavad",
+        "type": "person"
+    },
+    {
+        "source": "spear633-336",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-337",
+        "target": "http://syriaca.org/keyword/war http://syriaca.org/keyword/sacredSite",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-337",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-337",
+        "target": "http://syriaca.org/person/Kavad",
+        "type": "person"
+    },
+    {
+        "source": "spear633-337",
+        "target": "http://syriaca.org/person/MarSergios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-338",
+        "target": "http://syriaca.org/person/PaulBpEdessa",
+        "type": "person"
+    },
+    {
+        "source": "spear633-339",
+        "target": "http://syriaca.org/person/PaulBpEdessa",
+        "type": "person"
+    },
+    {
+        "source": "spear633-340",
+        "target": "http://syriaca.org/person/PaulBpEdessa",
+        "type": "person"
+    },
+    {
+        "source": "spear633-340",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-341",
+        "target": "http://syriaca.org/person/Peter",
+        "type": "person"
+    },
+    {
+        "source": "spear633-342",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-342",
+        "target": "http://syriaca.org/person/Peter",
+        "type": "person"
+    },
+    {
+        "source": "spear633-343",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-343",
+        "target": "http://syriaca.org/person/PaulBpEdessa",
+        "type": "person"
+    },
+    {
+        "source": "spear633-343",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-344",
+        "target": "http://syriaca.org/person/EmperorAnastasios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-345",
+        "target": "http://syriaca.org/person/EmperorAnastasios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-346",
+        "target": "http://syriaca.org/person/479",
+        "type": "person"
+    },
+    {
+        "source": "spear633-347",
+        "target": "http://syriaca.org/keyword/decree http://syriaca.org/keyword/synod",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-347",
+        "target": "http://syriaca.org/person/EmperorAnastasios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-347",
+        "target": "http://syriaca.org/person/479",
+        "type": "person"
+    },
+    {
+        "source": "spear633-347",
+        "target": "http://syriaca.org/place/622",
+        "type": "place"
+    },
+    {
+        "source": "spear633-347",
+        "target": "http://syriaca.org/person/EmperorAnastasios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-347",
+        "target": "http://syriaca.org/person/Anonymi19",
+        "type": "person"
+    },
+    {
+        "source": "spear633-348",
+        "target": "http://syriaca.org/person/Anonymi19",
+        "type": "person"
+    },
+    {
+        "source": "spear633-348",
+        "target": "http://syriaca.org/person/479",
+        "type": "person"
+    },
+    {
+        "source": "spear633-348",
+        "target": "http://syriaca.org/place/622",
+        "type": "place"
+    },
+    {
+        "source": "spear633-349",
+        "target": "http://syriaca.org/person/TimothyConstantinople",
+        "type": "person"
+    },
+    {
+        "source": "spear633-350",
+        "target": "http://syriaca.org/person/TimothyConstantinople",
+        "type": "person"
+    },
+    {
+        "source": "spear633-350",
+        "target": "http://syriaca.org/place/586",
+        "type": "place"
+    },
+    {
+        "source": "spear633-351",
+        "target": "http://syriaca.org/keyword/deposition",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-351",
+        "target": "http://syriaca.org/person/EmperorAnastasios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-351",
+        "target": "http://syriaca.org/person/Macedon",
+        "type": "person"
+    },
+    {
+        "source": "spear633-351",
+        "target": "http://syriaca.org/place/622",
+        "type": "place"
+    },
+    {
+        "source": "spear633-352",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-352",
+        "target": "http://syriaca.org/person/TimothyConstantinople",
+        "type": "person"
+    },
+    {
+        "source": "spear633-352",
+        "target": "http://syriaca.org/place/586",
+        "type": "place"
+    },
+    {
+        "source": "spear633-353",
+        "target": "http://syriaca.org/person/Vitalian",
+        "type": "person"
+    },
+    {
+        "source": "spear633-354",
+        "target": "http://syriaca.org/person/Vitalian",
+        "type": "person"
+    },
+    {
+        "source": "spear633-355",
+        "target": "http://syriaca.org/keyword/usurpation",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-355",
+        "target": "http://syriaca.org/person/Vitalian",
+        "type": "person"
+    },
+    {
+        "source": "spear633-355",
+        "target": "http://syriaca.org/person/EmperorAnastasios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-356",
+        "target": "http://syriaca.org/person/EmperorAnastasios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-357",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-357",
+        "target": "http://syriaca.org/person/EmperorAnastasios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-358",
+        "target": "http://syriaca.org/person/EmperorJustin",
+        "type": "person"
+    },
+    {
+        "source": "spear633-359",
+        "target": "http://syriaca.org/person/EmperorJustin",
+        "type": "person"
+    },
+    {
+        "source": "spear633-359",
+        "target": "http://syriaca.org/place/166",
+        "type": "place"
+    },
+    {
+        "source": "spear633-360",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-360",
+        "target": "http://syriaca.org/person/EmperorJustin",
+        "type": "person"
+    },
+    {
+        "source": "spear633-360",
+        "target": "http://syriaca.org/place/166",
+        "type": "place"
+    },
+    {
+        "source": "spear633-361",
+        "target": "http://syriaca.org/person/51",
+        "type": "person"
+    },
+    {
+        "source": "spear633-362",
+        "target": "http://syriaca.org/person/51",
+        "type": "person"
+    },
+    {
+        "source": "spear633-362",
+        "target": "http://syriaca.org/place/10",
+        "type": "place"
+    },
+    {
+        "source": "spear633-363",
+        "target": "http://syriaca.org/person/44",
+        "type": "person"
+    },
+    {
+        "source": "spear633-364",
+        "target": "http://syriaca.org/person/44",
+        "type": "person"
+    },
+    {
+        "source": "spear633-365",
+        "target": "http://syriaca.org/person/44",
+        "type": "person"
+    },
+    {
+        "source": "spear633-365",
+        "target": "http://syriaca.org/place/122",
+        "type": "place"
+    },
+    {
+        "source": "spear633-366",
+        "target": "http://syriaca.org/keyword/deposition",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-366",
+        "target": "http://syriaca.org/person/EmperorJustin",
+        "type": "person"
+    },
+    {
+        "source": "spear633-366",
+        "target": "http://syriaca.org/person/51",
+        "type": "person"
+    },
+    {
+        "source": "spear633-366",
+        "target": "http://syriaca.org/person/44",
+        "type": "person"
+    },
+    {
+        "source": "spear633-366",
+        "target": "http://syriaca.org/place/622",
+        "type": "place"
+    },
+    {
+        "source": "spear633-367",
+        "target": "http://syriaca.org/person/Fl.Patricius14PLREII840",
+        "type": "person"
+    },
+    {
+        "source": "spear633-368",
+        "target": "http://syriaca.org/keyword/deposition http://syriaca.org/keyword/decree http://syriaca.org/keyword/synod",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-368",
+        "target": "http://syriaca.org/person/Fl.Patricius14PLREII840",
+        "type": "person"
+    },
+    {
+        "source": "spear633-368",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-368",
+        "target": "http://syriaca.org/person/EmperorJustin",
+        "type": "person"
+    },
+    {
+        "source": "spear633-368",
+        "target": "http://syriaca.org/person/PaulBpEdessa",
+        "type": "person"
+    },
+    {
+        "source": "spear633-368",
+        "target": "http://syriaca.org/place/622",
+        "type": "place"
+    },
+    {
+        "source": "spear633-369",
+        "target": "http://syriaca.org/keyword/deposition http://syriaca.org/keyword/synod http://syriaca.org/keyword/decree http://syriaca.org/keyword/exile",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-369",
+        "target": "http://syriaca.org/person/PaulBpEdessa",
+        "type": "person"
+    },
+    {
+        "source": "spear633-369",
+        "target": "http://syriaca.org/place/622",
+        "type": "place"
+    },
+    {
+        "source": "spear633-369",
+        "target": "http://syriaca.org/person/Fl.Patricius14PLREII840",
+        "type": "person"
+    },
+    {
+        "source": "spear633-369",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-369",
+        "target": "http://syriaca.org/person/EmperorJustin",
+        "type": "person"
+    },
+    {
+        "source": "spear633-369",
+        "target": "http://syriaca.org/person/Fl.Patricius14PLREII840",
+        "type": "person"
+    },
+    {
+        "source": "spear633-369",
+        "target": "http://syriaca.org/person/PaulBpEdessa",
+        "type": "person"
+    },
+    {
+        "source": "spear633-369",
+        "target": "http://syriaca.org/place/174",
+        "type": "place"
+    },
+    {
+        "source": "spear633-370",
+        "target": "http://syriaca.org/keyword/decree http://syriaca.org/keyword/synod http://syriaca.org/keyword/deposition http://syriaca.org/keyword/exile",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-370",
+        "target": "http://syriaca.org/person/EmperorJustin",
+        "type": "person"
+    },
+    {
+        "source": "spear633-370",
+        "target": "http://syriaca.org/person/PaulBpEdessa",
+        "type": "person"
+    },
+    {
+        "source": "spear633-370",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-370",
+        "target": "http://syriaca.org/place/622",
+        "type": "place"
+    },
+    {
+        "source": "spear633-370",
+        "target": "http://syriaca.org/person/PaulBpEdessa",
+        "type": "person"
+    },
+    {
+        "source": "spear633-370",
+        "target": "http://syriaca.org/person/EmperorJustin",
+        "type": "person"
+    },
+    {
+        "source": "spear633-370",
+        "target": "http://syriaca.org/place/EuchaitaPontus",
+        "type": "place"
+    },
+    {
+        "source": "spear633-371",
+        "target": "http://syriaca.org/person/Asclepius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-372",
+        "target": "http://syriaca.org/person/Asclepius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-372",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-373",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-373",
+        "target": "http://syriaca.org/person/Asclepius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-373",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-374",
+        "target": "http://syriaca.org/person/Anonymi20",
+        "type": "person"
+    },
+    {
+        "source": "spear633-374.1",
+        "target": "http://syriaca.org/person/Anonymi20",
+        "type": "person"
+    },
+    {
+        "source": "spear633-375",
+        "target": "http://syriaca.org/keyword/synod http://syriaca.org/keyword/exile",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-375",
+        "target": "http://syriaca.org/person/Asclepius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-375",
+        "target": "http://syriaca.org/person/Anonymi20",
+        "type": "person"
+    },
+    {
+        "source": "spear633-375",
+        "target": "http://syriaca.org/place/622",
+        "type": "place"
+    },
+    {
+        "source": "spear633-376",
+        "target": "http://syriaca.org/keyword/naturalDisaster",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-376",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-377",
+        "target": "http://syriaca.org/person/Asclepius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-378",
+        "target": "http://syriaca.org/person/EuphrasiusAntioch",
+        "type": "person"
+    },
+    {
+        "source": "spear633-379",
+        "target": "http://syriaca.org/person/EuphrasiusAntioch",
+        "type": "person"
+    },
+    {
+        "source": "spear633-379",
+        "target": "http://syriaca.org/place/10",
+        "type": "place"
+    },
+    {
+        "source": "spear633-380",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-380",
+        "target": "http://syriaca.org/person/Asclepius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-380",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-380",
+        "target": "http://syriaca.org/place/10",
+        "type": "place"
+    },
+    {
+        "source": "spear633-380",
+        "target": "http://syriaca.org/person/EuphrasiusAntioch",
+        "type": "person"
+    },
+    {
+        "source": "spear633-381",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-381",
+        "target": "http://syriaca.org/person/Asclepius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-381",
+        "target": "http://syriaca.org/place/10",
+        "type": "place"
+    },
+    {
+        "source": "spear633-382",
+        "target": "http://syriaca.org/person/Asclepius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-382",
+        "target": "http://syriaca.org/place/10",
+        "type": "place"
+    },
+    {
+        "source": "spear633-382",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-382",
+        "target": "http://syriaca.org/person/Nonos",
+        "type": "person"
+    },
+    {
+        "source": "spear633-382",
+        "target": "http://syriaca.org/person/Barlāhā",
+        "type": "person"
+    },
+    {
+        "source": "spear633-383",
+        "target": "http://syriaca.org/person/JustinianI",
+        "type": "person"
+    },
+    {
+        "source": "spear633-384",
+        "target": "http://syriaca.org/person/JustinianI",
+        "type": "person"
+    },
+    {
+        "source": "spear633-384.1",
+        "target": "http://syriaca.org/person/JustinianI",
+        "type": "person"
+    },
+    {
+        "source": "spear633-385",
+        "target": "http://syriaca.org/person/PaulBpEdessa",
+        "type": "person"
+    },
+    {
+        "source": "spear633-385",
+        "target": "http://syriaca.org/place/622",
+        "type": "place"
+    },
+    {
+        "source": "spear633-385",
+        "target": "http://syriaca.org/person/JustinianI",
+        "type": "person"
+    },
+    {
+        "source": "spear633-385",
+        "target": "http://syriaca.org/person/EuphrasiusAntioch",
+        "type": "person"
+    },
+    {
+        "source": "spear633-386",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-386",
+        "target": "http://syriaca.org/person/PaulBpEdessa",
+        "type": "person"
+    },
+    {
+        "source": "spear633-386",
+        "target": "http://syriaca.org/place/622",
+        "type": "place"
+    },
+    {
+        "source": "spear633-386",
+        "target": "http://syriaca.org/person/JustinianI",
+        "type": "person"
+    },
+    {
+        "source": "spear633-386",
+        "target": "http://syriaca.org/person/EmperorJustin",
+        "type": "person"
+    },
+    {
+        "source": "spear633-386",
+        "target": "http://syriaca.org/person/PaulBpEdessa",
+        "type": "person"
+    },
+    {
+        "source": "spear633-386",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-387",
+        "target": "http://syriaca.org/person/PaulBpEdessa",
+        "type": "person"
+    },
+    {
+        "source": "spear633-388",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-388",
+        "target": "http://syriaca.org/person/PaulBpEdessa",
+        "type": "person"
+    },
+    {
+        "source": "spear633-389",
+        "target": "http://syriaca.org/person/Andreas",
+        "type": "person"
+    },
+    {
+        "source": "spear633-390",
+        "target": "http://syriaca.org/person/Andreas",
+        "type": "person"
+    },
+    {
+        "source": "spear633-390",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-391",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-391",
+        "target": "http://syriaca.org/person/Andreas",
+        "type": "person"
+    },
+    {
+        "source": "spear633-391",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-392",
+        "target": "http://syriaca.org/person/JustinianI",
+        "type": "person"
+    },
+    {
+        "source": "spear633-392",
+        "target": "http://syriaca.org/place/166",
+        "type": "place"
+    },
+    {
+        "source": "spear633-393",
+        "target": "http://syriaca.org/keyword/synod",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-393",
+        "target": "http://syriaca.org/person/JustinianI",
+        "type": "person"
+    },
+    {
+        "source": "spear633-393",
+        "target": "http://syriaca.org/place/621",
+        "type": "place"
+    },
+    {
+        "source": "spear633-393",
+        "target": "http://syriaca.org/place/586",
+        "type": "place"
+    },
+    {
+        "source": "spear633-393",
+        "target": "http://syriaca.org/place/623",
+        "type": "place"
+    },
+    {
+        "source": "spear633-393",
+        "target": "http://syriaca.org/place/622",
+        "type": "place"
+    },
+    {
+        "source": "spear633-394",
+        "target": "http://syriaca.org/keyword/omen",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-394",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-395",
+        "target": "http://syriaca.org/keyword/naturalDisaster",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-395",
+        "target": "http://syriaca.org/place/10",
+        "type": "place"
+    },
+    {
+        "source": "spear633-396",
+        "target": "http://syriaca.org/place/10",
+        "type": "place"
+    },
+    {
+        "source": "spear633-397",
+        "target": "http://syriaca.org/person/EuphrasiusAntioch",
+        "type": "person"
+    },
+    {
+        "source": "spear633-398",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-398",
+        "target": "http://syriaca.org/person/EuphrasiusAntioch",
+        "type": "person"
+    },
+    {
+        "source": "spear633-398",
+        "target": "http://syriaca.org/place/10",
+        "type": "place"
+    },
+    {
+        "source": "spear633-399",
+        "target": "http://syriaca.org/person/EphremAmida",
+        "type": "person"
+    },
+    {
+        "source": "spear633-399",
+        "target": "http://syriaca.org/place/8",
+        "type": "place"
+    },
+    {
+        "source": "spear633-400",
+        "target": "http://syriaca.org/person/EphremAmida",
+        "type": "person"
+    },
+    {
+        "source": "spear633-400",
+        "target": "http://syriaca.org/place/8",
+        "type": "place"
+    },
+    {
+        "source": "spear633-401",
+        "target": "http://syriaca.org/person/EphremAmida",
+        "type": "person"
+    },
+    {
+        "source": "spear633-401",
+        "target": "http://syriaca.org/place/8",
+        "type": "place"
+    },
+    {
+        "source": "spear633-402",
+        "target": "http://syriaca.org/person/EphremAmida",
+        "type": "person"
+    },
+    {
+        "source": "spear633-402",
+        "target": "http://syriaca.org/place/8",
+        "type": "place"
+    },
+    {
+        "source": "spear633-402",
+        "target": "http://syriaca.org/place/10",
+        "type": "place"
+    },
+    {
+        "source": "spear633-403",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-403",
+        "target": "http://syriaca.org/person/EphremAmida",
+        "type": "person"
+    },
+    {
+        "source": "spear633-403",
+        "target": "http://syriaca.org/place/8",
+        "type": "place"
+    },
+    {
+        "source": "spear633-403",
+        "target": "http://syriaca.org/place/10",
+        "type": "place"
+    },
+    {
+        "source": "spear633-404",
+        "target": "http://syriaca.org/person/Andreas",
+        "type": "person"
+    },
+    {
+        "source": "spear633-405",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-405",
+        "target": "http://syriaca.org/person/Andreas",
+        "type": "person"
+    },
+    {
+        "source": "spear633-405",
+        "target": "http://syriaca.org/person/Barlāhā",
+        "type": "person"
+    },
+    {
+        "source": "spear633-405",
+        "target": "http://syriaca.org/person/Nonos",
+        "type": "person"
+    },
+    {
+        "source": "spear633-405",
+        "target": "http://syriaca.org/person/Asclepius",
+        "type": "person"
+    },
+    {
+        "source": "spear633-406",
+        "target": "http://syriaca.org/person/Addai",
+        "type": "person"
+    },
+    {
+        "source": "spear633-407",
+        "target": "http://syriaca.org/person/Addai",
+        "type": "person"
+    },
+    {
+        "source": "spear633-408",
+        "target": "http://syriaca.org/person/Addai",
+        "type": "person"
+    },
+    {
+        "source": "spear633-408",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-409",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-409",
+        "target": "http://syriaca.org/person/Addai",
+        "type": "person"
+    },
+    {
+        "source": "spear633-409",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-410",
+        "target": "http://syriaca.org/person/EmperorJustin",
+        "type": "person"
+    },
+    {
+        "source": "spear633-411",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-411",
+        "target": "http://syriaca.org/person/EmperorJustin",
+        "type": "person"
+    },
+    {
+        "source": "spear633-412",
+        "target": "http://syriaca.org/person/EmperorJustin",
+        "type": "person"
+    },
+    {
+        "source": "spear633-412",
+        "target": "http://syriaca.org/place/166",
+        "type": "place"
+    },
+    {
+        "source": "spear633-413",
+        "target": "http://syriaca.org/keyword/accession",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-413",
+        "target": "http://syriaca.org/person/EmperorJustin",
+        "type": "person"
+    },
+    {
+        "source": "spear633-413",
+        "target": "http://syriaca.org/place/166",
+        "type": "place"
+    },
+    {
+        "source": "spear633-414",
+        "target": "http://syriaca.org/person/EmperorJustin",
+        "type": "person"
+    },
+    {
+        "source": "spear633-415",
+        "target": "http://syriaca.org/person/EmperorJustin",
+        "type": "person"
+    },
+    {
+        "source": "spear633-416",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-416",
+        "target": "http://syriaca.org/person/EmperorJustin",
+        "type": "person"
+    },
+    {
+        "source": "spear633-417",
+        "target": "http://syriaca.org/person/DemosthenesPRLEII353",
+        "type": "person"
+    },
+    {
+        "source": "spear633-418",
+        "target": "http://syriaca.org/person/DemosthenesPRLEII353",
+        "type": "person"
+    },
+    {
+        "source": "spear633-418",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-419",
+        "target": "http://syriaca.org/keyword/war http://syriaca.org/keyword/violence",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-419",
+        "target": "http://syriaca.org/person/Huns",
+        "type": "person"
+    },
+    {
+        "source": "spear633-419",
+        "target": "http://syriaca.org/place/166",
+        "type": "place"
+    },
+    {
+        "source": "spear633-419",
+        "target": "http://syriaca.org/place/18",
+        "type": "place"
+    },
+    {
+        "source": "spear633-419",
+        "target": "http://syriaca.org/place/10",
+        "type": "place"
+    },
+    {
+        "source": "spear633-420",
+        "target": "http://syriaca.org/person/DemosthenesPRLEII353",
+        "type": "person"
+    },
+    {
+        "source": "spear633-421",
+        "target": "http://syriaca.org/keyword/death",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-421",
+        "target": "http://syriaca.org/person/DemosthenesPRLEII353",
+        "type": "person"
+    },
+    {
+        "source": "spear633-421",
+        "target": "http://syriaca.org/place/200",
+        "type": "place"
+    },
+    {
+        "source": "spear633-421",
+        "target": "http://syriaca.org/person/Huns",
+        "type": "person"
+    },
+    {
+        "source": "spear633-422",
+        "target": "http://syriaca.org/person/Rufinus13PLREII954",
+        "type": "person"
+    },
+    {
+        "source": "spear633-423",
+        "target": "http://syriaca.org/person/Rufinus13PLREII954",
+        "type": "person"
+    },
+    {
+        "source": "spear633-424",
+        "target": "http://syriaca.org/keyword/diplomacy",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-424",
+        "target": "http://syriaca.org/person/Rufinus13PLREII954",
+        "type": "person"
+    },
+    {
+        "source": "spear633-424",
+        "target": "http://syriaca.org/place/166",
+        "type": "place"
+    },
+    {
+        "source": "spear633-424",
+        "target": "http://syriaca.org/place/150",
+        "type": "place"
+    },
+    {
+        "source": "spear633-425",
+        "target": "http://syriaca.org/place/166",
+        "type": "place"
+    },
+    {
+        "source": "spear633-425",
+        "target": "http://syriaca.org/place/150",
+        "type": "place"
+    },
+    {
+        "source": "spear633-426",
+        "target": "http://syriaca.org/person/Chosroes",
+        "type": "person"
+    },
+    {
+        "source": "spear633-426",
+        "target": "http://syriaca.org/person/Persians",
+        "type": "person"
+    },
+    {
+        "source": "spear633-427",
+        "target": "http://syriaca.org/person/Chosroes",
+        "type": "person"
+    },
+    {
+        "source": "spear633-427",
+        "target": "http://syriaca.org/place/150",
+        "type": "place"
+    },
+    {
+        "source": "spear633-428",
+        "target": "http://syriaca.org/keyword/war http://syriaca.org/keyword/violence",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-428",
+        "target": "http://syriaca.org/person/Chosroes",
+        "type": "person"
+    },
+    {
+        "source": "spear633-428",
+        "target": "http://syriaca.org/place/166",
+        "type": "place"
+    },
+    {
+        "source": "spear633-428",
+        "target": "http://syriaca.org/place/185",
+        "type": "place"
+    },
+    {
+        "source": "spear633-428",
+        "target": "http://syriaca.org/place/18",
+        "type": "place"
+    },
+    {
+        "source": "spear633-428",
+        "target": "http://syriaca.org/place/10",
+        "type": "place"
+    },
+    {
+        "source": "spear633-429",
+        "target": "http://syriaca.org/person/Anonymi21",
+        "type": "person"
+    },
+    {
+        "source": "spear633-429",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-430",
+        "target": "http://syriaca.org/keyword/war",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-430",
+        "target": "http://syriaca.org/person/Anonymi21",
+        "type": "person"
+    },
+    {
+        "source": "spear633-430",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-430",
+        "target": "http://syriaca.org/person/Chosroes",
+        "type": "person"
+    },
+    {
+        "source": "spear633-430",
+        "target": "http://syriaca.org/person/Chosroes",
+        "type": "person"
+    },
+    {
+        "source": "spear633-430",
+        "target": "http://syriaca.org/place/150",
+        "type": "place"
+    },
+    {
+        "source": "spear633-431",
+        "target": "http://syriaca.org/keyword/naturalDisaster",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-431",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-432",
+        "target": "http://syriaca.org/keyword/naturalDisaster",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-432",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-432",
+        "target": "http://syriaca.org/person/Diocletian",
+        "type": "person"
+    },
+    {
+        "source": "spear633-433",
+        "target": "http://syriaca.org/person/EmperorHonorios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-434",
+        "target": "http://syriaca.org/person/EmperorHonorios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-434",
+        "target": "http://syriaca.org/place/166",
+        "type": "place"
+    },
+    {
+        "source": "spear633-435",
+        "target": "http://syriaca.org/keyword/naturalDisaster",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-435",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-435",
+        "target": "http://syriaca.org/person/EmperorHonorios",
+        "type": "person"
+    },
+    {
+        "source": "spear633-435",
+        "target": "http://syriaca.org/place/TheodosiusII",
+        "type": "place"
+    },
+    {
+        "source": "spear633-435",
+        "target": "http://syriaca.org/person/26",
+        "type": "person"
+    },
+    {
+        "source": "spear633-436",
+        "target": "http://syriaca.org/keyword/naturalDisaster",
+        "type": "keyword"
+    },
+    {
+        "source": "spear633-436",
+        "target": "http://syriaca.org/place/78",
+        "type": "place"
+    },
+    {
+        "source": "spear633-436",
+        "target": "http://syriaca.org/person/EmperorJustin",
+        "type": "person"
+    },
+    {
+        "source": "spear633-436",
+        "target": "http://syriaca.org/person/Asclepius",
+        "type": "person"
+    }
+]
