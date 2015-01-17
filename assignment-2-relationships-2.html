@@ -20,27 +20,33 @@
                     stroke-width: 1.5px;
                 }
                 path.link.place {
-                     stroke: steelblue;
+                     stroke: green;
                 }
                 path.link.person {
-                     stroke: blue;
+                     stroke: steelblue;
                 }
                 path.link.keyword {
                     stroke: purple;
                     /*stroke-dasharray: 0, 2 1;*/
                 }
-                circle.place {
-                    stroke: steelblue;
-                    fill: steelblue;
-                }
-                circle.keyword {
-                    stroke: purple;
-                    fill: steelblue;
-                }
-                circle.person{
-                    fill: blue;
-                    fill: steelblue;
-                }
+                div.tooltip {					
+                   	position:absolute;
+                   	text-align:center;
+                   	width:200px;
+                   	height:15px;
+                   	padding:0px;				
+                   	font:12px sans-serif;
+                   	background:yellow;	
+                   	border:0px;
+                   	border-radius:2px;
+                   	z-index:3000;			
+               }
+               #sidebar{
+                position:relative;
+                top:10px;
+                right:1300px;
+                z-index:3000;	
+               }
             </style>
             <script type='text/javascript'>
             //<![CDATA[ 
@@ -48,9 +54,11 @@
                 height = 650;
             var color = d3.scale.category20();
             var force = d3.layout.force()
-                .charge(-125)
+                .charge(-55)
                 .linkDistance(30)
-                .size([width,height]);
+                .size([width - 2 * 10, height - 2 * 10])
+                //lookup gravity
+                .gravity(0.3);
             
             d3.json('spear.json', function(error, graph){
                 
@@ -72,11 +80,25 @@
                     .links(links)
                     .on("tick",tick)
                     .start();
-                
+                    
+               // Define 'div' for tooltips
+                var div = d3.select("#graph")
+                	.append("div")  
+                	.attr("class", "tooltip")             
+                	.style("opacity", 0); 
                 var svg = d3.select("#graph").append("svg:svg")
                     .attr("width",width)
-                    .attr("height",height);
+                    .attr("height",height)
+                    .attr("pointer-events", "all")
+                    .append('svg:g')
+                    .call(d3.behavior.zoom().on("zoom", redraw))
+                    .append('svg:g');
                  
+                svg.append('svg:rect')
+                    .attr('width', width)
+                    .attr('height', height)
+                    .attr('fill', 'white');                 
+                    
                  var path = svg.append("svg:g")
                     .selectAll("path")
                     .data(force.links())
@@ -88,18 +110,32 @@
                     .data(force.nodes())
                    .enter().append("svg:circle")
                     .attr("r",6)
-                    .call(force.drag);
+                    .on("mouseover", function(d) { 
+                     d3.select(this).transition()        
+                         .duration(200)      
+                         .attr("r",20); 
+                         div.transition()
+         				.duration(500)	
+         				.style("opacity", 0);
+         			div.transition()
+         				.duration(200)	
+         				.style("opacity", 0.9);	
+         			div	.html(d.name)	 
+         				.style("left", (d3.event.pageX) + "px")			 
+         				.style("top", (d3.event.pageY - 2) + "px");
+                         })               
+                 .on("mouseout", function(d) {      
+                      d3.select(this).transition()        
+                         .duration(500)      
+                         .attr("r",6);   
+                      div.transition()
+         				.duration(200)	
+         				.style("opacity", 0);	
+                 })
+                 .attr("fill",function(d) { return color(d.name);})
+                 .call(force.drag);
                     
-                var text = svg.append("svg:g")
-                    .selectAll("g")
-                    .data(force.nodes())
-                   .enter().append("svg:g")
-                    .attr("class","nodeText");
                     
-                text.append("svg:text")
-                    .attr("x", 8)
-                    .attr("y",".31em")
-                    .text(function (d){return d.name;});
                     
                function tick() {
                     path.attr("d", function (d) {
@@ -113,10 +149,14 @@
                         return "translate(" + d.x + "," + d.y + ")";
                     });
             
-                    text.attr("transform", function (d) {
-                        return "translate(" + d.x + "," + d.y + ")";
-                    });
                 }
+             
+             function redraw() {
+                  console.log("here", d3.event.translate, d3.event.scale);
+                  svg.attr("transform",
+                      "translate(" + d3.event.translate + ")"
+                      + " scale(" + d3.event.scale + ")");
+                } 
             });
             //]]>  
              
