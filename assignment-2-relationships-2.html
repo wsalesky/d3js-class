@@ -20,7 +20,7 @@
                     stroke-width: 1.5px;
                 }
                 path.link.place {
-                     stroke: red;
+                     stroke: orange;
                 }
                 path.link.person {
                      stroke: steelblue;
@@ -72,6 +72,9 @@
                     });
                     link.target = nodes[link.target] || (nodes[link.target] = {
                         name: link.target
+                    });
+                    link.target = nodes[link.type] || (nodes[link.type] = {
+                        name: link.type
                     });
                 });
                 
