@@ -55,6 +55,7 @@
             d3.json('spear.json', function(error, graph){
                 
                 var links = graph
+                var nodes = {};
                 //seperate out data into source and targets
                 links.forEach(function (link) {
                     link.source = nodes[link.source] || (nodes[link.source] = {
