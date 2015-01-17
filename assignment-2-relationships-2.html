@@ -73,9 +73,6 @@
                     link.target = nodes[link.target] || (nodes[link.target] = {
                         name: link.target
                     });
-                    link.type = nodes[link.type] || (nodes[link.type] = {
-                        name: link.type
-                    });
                 });
                 
                 force
@@ -135,8 +132,8 @@
          				.duration(200)	
          				.style("opacity", 0);	
                  })
-                 //.attr("fill",function(d) { return color(d.name);})
-                 .attr("class", function (d){return "link " + d.type;})
+                 .attr("fill",function(d) { return color(d.name);})
+                 //.attr("class", function (d){return "link " + d.type;})
                  .call(force.drag);
                     
                     

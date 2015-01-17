@@ -919,9 +919,10 @@
             var force = d3.layout.force()
                 .nodes(d3.values(nodes))
                 .links(links)
-                .size([width,height])
-                .linkDistance(50)
-                .charge(-250)
+                .charge(-55)
+                .linkDistance(30)
+                .size([width - 2 * 10, height - 2 * 10])
+                //lookup gravity
                 .on("tick",tick)
                 .start();
              
@@ -940,6 +941,8 @@
                 .data(force.nodes())
                .enter().append("svg:circle")
                 .attr("r",6)
+                //.attr("class", function(force.links()[i]){ return "node type"+force.links.type})
+                //.attr("class", function (force.links()){return "link " + d.type;})
                 .call(force.drag);
                 
             var text = svg.append("svg:g")
