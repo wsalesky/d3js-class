@@ -20,7 +20,7 @@
                     stroke-width: 1.5px;
                 }
                 path.link.place {
-                     stroke: green;
+                     stroke: red;
                 }
                 path.link.person {
                      stroke: steelblue;
@@ -132,7 +132,8 @@
          				.duration(200)	
          				.style("opacity", 0);	
                  })
-                 .attr("fill",function(d) { return color(d.name);})
+                 //.attr("fill",function(d) { return color(d.name);})
+                 .attr("class", function (d){return "link " + d.type;});
                  .call(force.drag);
                     
                     
