@@ -182,7 +182,7 @@ footer {
   position:fixed;
   bottom:50px;
 }
-
+#contents{margin-top:-10em;}
 @media print, screen and (max-width: 960px) {
   
   div.wrapper {

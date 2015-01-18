@@ -2,7 +2,15 @@
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-            <title></title>
+            <title>Assignment 2: Relationships</title>
+            <link rel="stylesheet" href="stylesheets/styles.css">
+                <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+                    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+                        <!--[if lt IE 9]>
+                <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+                        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+                        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
             <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
             <script type='text/javascript' src="http://d3js.org/d3.v3.js"></script>
             <style>
@@ -36,7 +44,7 @@
                    	height:15px;
                    	padding:0px;				
                    	font:12px sans-serif;
-                   	background:yellow;	
+                   	background:white;	
                    	border:0px;
                    	border-radius:2px;
                    	z-index:3000;			
@@ -52,7 +60,7 @@
             //<![CDATA[ 
             var width = 1200,
                 height = 650;
-            var color = d3.scale.category20();
+            var color = d3.scale.category20b();
             var force = d3.layout.force()
                 .charge(-55)
                 .linkDistance(30)
@@ -164,6 +172,15 @@
     </script>
     </head>
     <body>
+        <header>
+            <h1>D3js-class</h1>
+            <p><a href="index.html">Classwork for d3js</a></p>
+            <p class="view">
+                <a href="https://github.com/wsalesky/d3js-class">View the Project on GitHub <br/>
+                    <small>wsalesky/d3js-class</small></a></p>
+        </header>
+        <section id="contents">
         <div id="graph"></div>
+        </section>
     </body>
 </html>

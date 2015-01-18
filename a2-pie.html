@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>    
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+            <title>Assignment 2: Pie Chart</title>
+            <link rel="stylesheet" href="stylesheets/styles.css">
+            <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+            <!--[if lt IE 9]>
+                <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+            <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+            <script type='text/javascript' src="http://d3js.org/d3.v3.js"></script>
+            
+            <style type="text/css">
+                body {
+                  font: 10px sans-serif;
+                }
+                
+                  .chart {
+                    font-family: Arial, sans-serif;
+                    font-size: 10px;
+                  }
+                  text {
+     				font-family: sans-serif;
+     				font-size: 12px;
+     				fill: #666;
+     			}
+     			.legend {
+                  font-size: 12px;
+                }
+                rect {
+                  stroke-width: 2;
+                }
+            </style>
+            <script type="text/javascript">
+            //<![CDATA[
+                $(window).load(function() { /// jQuery function that starts after window loads.
+                 var w = 850,                        //width
+                 h = 750,                            //height
+                 r = (Math.min(w, h) / 2) - 150,                            //radius
+                 color = d3.scale.category20c();     //builtin range of colors
+             
+                 var data = [{"type":"building","size":"19"},{"type":"church","size":"378"},{"type":"diocese","size":"188"},{"type":"fortification","size":"6"},{"type":"island","size":"5"},{"type":"monastery","size":"255"},{"type":"mountain","size":"21"},{"type":"open water","size":"7"},{"type":"parish","size":"2"},{"type":"province","size":"23"},{"type":"quarter","size":"6"},{"type":"region","size":"173"},{"type":"river","size":"19"},{"type":"settlement","size":"1333"},{"type":"state","size":"16"},{"type":"temple","size":"1"},{"type":"unknown","size":"10"}];
+                 
+                 var svg = d3.select(".pie")
+                     .append("svg") 
+                     .attr("width",w)
+                     .attr("height",h)
+                     .append('g')
+                     .attr('transform', 'translate(' + (w / 2) +  ',' + (h / 2) + ')');
+                    
+                 var arc = d3.svg.arc()              //this will create <path> elements for us using arc data
+                     .outerRadius(r);
+             
+                 var pie = d3.layout.pie()           //this will create arc data for us given a list of values
+                     .value(function(d) { return d.size; });    //we must tell it out to access the value of each element in our data array
+                
+                 var path = svg.selectAll("path")
+                    .data(pie(data))
+                   .enter()
+                    .append("path")
+                    .attr("d",arc)
+                    .attr("fill",function(d,i){
+                        return color(d.data.type);
+                    });
+                    
+                    // path.append("text")
+                    //  .attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
+                    //    .attr("dy", ".35em")
+                    //    .style("text-anchor", "middle")
+                    //    .text(function(d) { return d.data.size; });
+                        
+                    var legendRectSize = 18;
+                    var legendSpacing = 4;
+                    
+                    var legend = svg.selectAll('.legend')
+                        .data(color.domain())
+                        .enter()
+                        .append('g')
+                        .attr('class', 'legend')
+                        .attr('transform', function(d, i) {
+                          var height = legendRectSize + legendSpacing;
+                          var offset =  height * color.domain().length / 2;
+                          var horz = r + 50;
+                          //var horz = height = offset;
+                          var vert = i * height - offset;
+                          return 'translate(' + horz + ',' + vert + ')';
+                        });
+                        
+                        legend.append('rect')
+                        .attr('width', legendRectSize)
+                        .attr('height', legendRectSize)
+                        .style('fill', color)
+                        .style('stroke', color);
+                        
+                        legend.append('text')
+                        .attr('x', legendRectSize + legendSpacing)
+                        .attr('y', legendRectSize - legendSpacing)
+                        .text(function(d) { return d; });
+                    });
+                    //]]> 
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>D3js-class</h1>
+            <p><a href="index.html">Classwork for d3js</a></p>
+            <p class="view">
+                <a href="https://github.com/wsalesky/d3js-class">View the Project on GitHub <br/>
+                    <small>wsalesky/d3js-class</small></a></p>
+        </header>
+        <section id="contents">
+           <div class="pie"/>
+            <div class="legend"/>
+        </section>
+    </body>
+</html>

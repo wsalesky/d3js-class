@@ -914,6 +914,7 @@
                 link.target = nodes[link.target] || (nodes[link.target] = {
                     name: link.target
                 });
+                //link.type = nodes[link.type];
             });
             
             var force = d3.layout.force()
@@ -943,6 +944,7 @@
                 .attr("r",6)
                 //.attr("class", function(force.links()[i]){ return "node type"+force.links.type})
                 //.attr("class", function (force.links()){return "link " + d.type;})
+                //.attr("class", function (d){return "link " + d.type;});
                 .call(force.drag);
                 
             var text = svg.append("svg:g")
