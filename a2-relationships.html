@@ -63,10 +63,10 @@
             var color = d3.scale.category20b();
             var force = d3.layout.force()
                 .charge(-55)
-                .linkDistance(30)
-                .size([width - 2 * 10, height - 2 * 10])
+                .linkDistance(40)
+                .size([width - 2 * 15, height - 2 * 10])
                 //lookup gravity
-                .gravity(0.3);
+                .gravity(0.2);
             
             d3.json('spear.json', function(error, graph){
                 
@@ -141,7 +141,6 @@
          				.style("opacity", 0);	
                  })
                  .attr("fill",function(d) { return color(d.name);})
-                 //.attr("class", function (d){return "link " + d.type;})
                  .call(force.drag);
                     
                     
