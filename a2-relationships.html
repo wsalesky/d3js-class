@@ -63,10 +63,10 @@
             var color = d3.scale.category20b();
             var force = d3.layout.force()
                 .charge(-55)
-                .linkDistance(35)
-                .size([width - 2 * 25, height - 2 * 10])
+                .linkDistance(30)
+                .size([width - 2 * 10, height - 2 * 10])
                 //lookup gravity
-                .gravity(0.2);
+                .gravity(0.4);
             
             d3.json('spear.json', function(error, graph){
                 
