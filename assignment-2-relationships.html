@@ -2,10 +2,18 @@
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-            <title></title>
-            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
-            <script type='text/javascript' src="http://d3js.org/d3.v3.js"></script>
-            <style>
+            <title>Assignment 2: Relationships</title>
+            <link rel="stylesheet" href="stylesheets/styles.css">
+                <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+                    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+                        <!--[if lt IE 9]>
+                <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+                        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+                        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+                        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+                        <script type='text/javascript' src="http://d3js.org/d3.v3.js"></script>
+                        <style>
                 body {
                   font: 10px sans-serif;
                 }
@@ -20,962 +28,146 @@
                     stroke-width: 1.5px;
                 }
                 path.link.place {
-                     stroke: steelblue;
+                     stroke: orange;
                 }
                 path.link.person {
-                     stroke: blue;
+                     stroke: steelblue;
                 }
                 path.link.keyword {
                     stroke: purple;
                     /*stroke-dasharray: 0, 2 1;*/
                 }
-                circle.place {
-                    stroke: steelblue;
-                    fill: steelblue;
-                }
-                circle.keyword {
-                    stroke: purple;
-                    fill: steelblue;
-                }
-                circle.person{
-                    fill: blue;
-                    fill: steelblue;
-                }
+                div.tooltip {					
+                   	position:absolute;
+                   	text-align:center;
+                   	width:200px;
+                   	height:15px;
+                   	padding:0px;				
+                   	font:12px sans-serif;
+                   	background:white;	
+                   	border:0px;
+                   	border-radius:2px;
+                   	z-index:3000;			
+               }
+               #sidebar{
+                position:relative;
+                top:10px;
+                right:1300px;
+                z-index:3000;	
+               }
             </style>
-            <script type='text/javascript'>
+                        <script type='text/javascript'>
             //<![CDATA[ 
             var width = 1200,
                 height = 650;
-            $(window).load(function() { /// jQuery function that starts after window loads.
-            var links =
-            [
-             {
-                 "source": "spear633-11",
-                 "target": "http://syriaca.org/keyword/decree",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-11",
-                 "target": "http://syriaca.org/person/AbgarVIII",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-11",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-12",
-                 "target": "http://syriaca.org/person/Anonymi3",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-13",
-                 "target": "http://syriaca.org/keyword/naturalDisaster",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-13",
-                 "target": "http://syriaca.org/person/Anonymi3",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-13",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-13",
-                 "target": "http://syriaca.org/place/191",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-14",
-                 "target": "http://syriaca.org/person/Anonymi4",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-14",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-15",
-                 "target": "http://syriaca.org/person/Anonymi4",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-15",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-17",
-                 "target": "http://syriaca.org/keyword/decree",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-17",
-                 "target": "http://syriaca.org/person/AbgarVIII",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-17",
-                 "target": "http://syriaca.org/person/Anonymi4",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-17",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-17",
-                 "target": "http://syriaca.org/place/191",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-18",
-                 "target": "http://syriaca.org/person/Anonymi5",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-18",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-19",
-                 "target": "http://syriaca.org/person/Anonymi5",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-19",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-20",
-                 "target": "http://syriaca.org/person/Anonymi6",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-20",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-22",
-                 "target": "http://syriaca.org/person/Anonymi7",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-22",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-23",
-                 "target": "http://syriaca.org/person/Anonymi7",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-23",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-24",
-                 "target": "http://syriaca.org/keyword/decree",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-24",
-                 "target": "http://syriaca.org/person/AbgarVIII",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-24",
-                 "target": "http://syriaca.org/person/Anonymi6",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-24",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-25",
-                 "target": "http://syriaca.org/keyword/architecture http://syriaca.org/keyword/decree",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-25",
-                 "target": "http://syriaca.org/person/AbgarVIII",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-25",
-                 "target": "http://syriaca.org/place/Winter-royal-residence@Tabara",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-26",
-                 "target": "http://syriaca.org/person/Anonymi8",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-26",
-                 "target": "http://syriaca.org/person/AbgarVIII",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-26",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-29",
-                 "target": "http://syriaca.org/person/Anonymi8",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-29",
-                 "target": "http://syriaca.org/person/AbgarVIII",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-29",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-31",
-                 "target": "http://syriaca.org/keyword/decree",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-31",
-                 "target": "http://syriaca.org/person/AbgarVIII",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-31",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-32",
-                 "target": "http://syriaca.org/person/Yahab",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-33",
-                 "target": "http://syriaca.org/person/Yahab",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-33",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-34",
-                 "target": "http://syriaca.org/person/Kaiuma",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-35",
-                 "target": "http://syriaca.org/person/Kaiuma",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-35",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-36",
-                 "target": "http://syriaca.org/person/BarDin",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-38",
-                 "target": "http://syriaca.org/person/BarDin",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-38",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-39",
-                 "target": "http://syriaca.org/person/Bulid",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-41",
-                 "target": "http://syriaca.org/person/Bulid",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-41",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-42",
-                 "target": "http://syriaca.org/keyword/writing",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-42",
-                 "target": "http://syriaca.org/person/Yahab",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-42",
-                 "target": "http://syriaca.org/person/Kaiuma",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-42",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-43",
-                 "target": "http://syriaca.org/keyword/writing",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-43",
-                 "target": "http://syriaca.org/person/BarDin",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-43",
-                 "target": "http://syriaca.org/person/Bulid",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-43",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-44",
-                 "target": "http://syriaca.org/keyword/governance",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-44",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-45",
-                 "target": "http://syriaca.org/person/Augustus",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-45.1",
-                 "target": "http://syriaca.org/person/Augustus",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-45.1",
-                 "target": "http://syriaca.org/place/166",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-46",
-                 "target": "http://syriaca.org/keyword/accession",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-46",
-                 "target": "http://syriaca.org/person/Augustus",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-46",
-                 "target": "http://syriaca.org/place/166",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-47",
-                 "target": "http://syriaca.org/person/Christ",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-48",
-                 "target": "http://syriaca.org/person/Christ",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-49",
-                 "target": "http://syriaca.org/keyword/birth",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-49",
-                 "target": "http://syriaca.org/person/Christ",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-50",
-                 "target": "http://syriaca.org/person/AbgarVI",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-51",
-                 "target": "http://syriaca.org/person/AbgarVI",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-51",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-52",
-                 "target": "http://syriaca.org/keyword/architecture http://syriaca.org/keyword/governance",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-52",
-                 "target": "http://syriaca.org/person/AbgarVI",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-53",
-                 "target": "http://syriaca.org/person/616",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-54",
-                 "target": "http://syriaca.org/keyword/apostasy",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-54",
-                 "target": "http://syriaca.org/person/616",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-55",
-                 "target": "http://syriaca.org/person/3",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-56",
-                 "target": "http://syriaca.org/person/3",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-57",
-                 "target": "http://syriaca.org/keyword/birth",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-57",
-                 "target": "http://syriaca.org/person/3",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-58",
-                 "target": "http://syriaca.org/person/LuciusVerus",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-60",
-                 "target": "http://syriaca.org/keyword/war http://syriaca.org/keyword/violence",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-60",
-                 "target": "http://syriaca.org/person/LuciusVerus",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-60",
-                 "target": "http://syriaca.org/person/Commodus",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-61",
-                 "target": "http://syriaca.org/keyword/architecture",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-61",
-                 "target": "http://syriaca.org/person/AbgarVIII",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-61",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-62",
-                 "target": "http://syriaca.org/person/608",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-63",
-                 "target": "http://syriaca.org/person/608",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-64",
-                 "target": "http://syriaca.org/person/608",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-65",
-                 "target": "http://syriaca.org/keyword/birth",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-65",
-                 "target": "http://syriaca.org/person/608",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-66",
-                 "target": "http://syriaca.org/keyword/naturalDisaster",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-66",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-67",
-                 "target": "http://syriaca.org/person/Diocletian",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-68",
-                 "target": "http://syriaca.org/person/Conon",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-68",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-69",
-                 "target": "http://syriaca.org/person/Conon",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-69",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-70",
-                 "target": "http://syriaca.org/person/Shaʿd",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-70",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-71",
-                 "target": "http://syriaca.org/keyword/architecture http://syriaca.org/keyword/sacredSite",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-71",
-                 "target": "http://syriaca.org/person/Conon",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-71",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-72",
-                 "target": "http://syriaca.org/keyword/sacredSite http://syriaca.org/keyword/architecture",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-72",
-                 "target": "http://syriaca.org/person/Shaʿd",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-72",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-73",
-                 "target": "http://syriaca.org/person/326",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-73",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-74",
-                 "target": "http://syriaca.org/person/326",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-74",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-75",
-                 "target": "http://syriaca.org/person/326",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-75",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-76",
-                 "target": "http://syriaca.org/keyword/architecture",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-76",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-77",
-                 "target": "http://syriaca.org/keyword/accession",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-77",
-                 "target": "http://syriaca.org/person/326",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-77",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-78",
-                 "target": "http://syriaca.org/keyword/accession",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-78",
-                 "target": "http://syriaca.org/person/326",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-78",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-79",
-                 "target": "http://syriaca.org/keyword/sacredSite http://syriaca.org/keyword/architecture",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-79",
-                 "target": "http://syriaca.org/person/326",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-79",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-80",
-                 "target": "http://syriaca.org/keyword/sacredSite http://syriaca.org/keyword/architecture",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-80",
-                 "target": "http://syriaca.org/person/326",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-80",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-81",
-                 "target": "http://syriaca.org/keyword/synod",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-81",
-                 "target": "http://syriaca.org/place/621",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-82",
-                 "target": "http://syriaca.org/keyword/architecture http://syriaca.org/keyword/sacredSite",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-82",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-83",
-                 "target": "http://syriaca.org/person/811",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-83",
-                 "target": "http://syriaca.org/place/142",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-84",
-                 "target": "http://syriaca.org/person/811",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-84",
-                 "target": "http://syriaca.org/place/142",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-85",
-                 "target": "http://syriaca.org/person/811",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-86",
-                 "target": "http://syriaca.org/keyword/death",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-86",
-                 "target": "http://syriaca.org/person/811",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-87",
-                 "target": "http://syriaca.org/person/Abraham",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-88",
-                 "target": "http://syriaca.org/keyword/accession",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-88",
-                 "target": "http://syriaca.org/person/Abraham",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-88",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-89",
-                 "target": "http://syriaca.org/person/Abraham",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-89",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-90",
-                 "target": "http://syriaca.org/keyword/architecture http://syriaca.org/keyword/sacredSite http://syriaca.org/keyword/cultOfSaints",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-90",
-                 "target": "http://syriaca.org/person/Abraham",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-90",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-91",
-                 "target": "http://syriaca.org/person/Constantius",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-92",
-                 "target": "http://syriaca.org/person/Constantine",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-94",
-                 "target": "http://syriaca.org/keyword/architecture",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-94",
-                 "target": "http://syriaca.org/person/Constantius",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-94",
-                 "target": "http://syriaca.org/place/8",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-95",
-                 "target": "http://syriaca.org/keyword/architecture",
-                 "type": "keyword"
-             },
-             {
-                 "source": "spear633-95",
-                 "target": "http://syriaca.org/person/Constantius",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-95",
-                 "target": "http://syriaca.org/place/200",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-96",
-                 "target": "http://syriaca.org/person/AbrahamQidunaya",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-97",
-                 "target": "http://syriaca.org/person/AbrahamQidunaya",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-97",
-                 "target": "http://syriaca.org/place/Qiduna",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-98",
-                 "target": "http://syriaca.org/person/AbrahamQidunaya",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-99",
-                 "target": "http://syriaca.org/person/AbrahamQidunaya",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-99",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-100",
-                 "target": "http://syriaca.org/person/Abraham",
-                 "type": "person"
-             },
-             {
-                 "source": "spear633-100",
-                 "target": "http://syriaca.org/place/78",
-                 "type": "place"
-             },
-             {
-                 "source": "spear633-103",
-                 "target": "http://syriaca.org/person/Vologesh",
-                 "type": "person"
-             }]
-            
-            var nodes = {};
-            
-            links.forEach(function (link) {
-                link.source = nodes[link.source] || (nodes[link.source] = {
-                    name: link.source
-                });
-                link.target = nodes[link.target] || (nodes[link.target] = {
-                    name: link.target
-                });
-                //link.type = nodes[link.type];
-            });
-            
+            var color = d3.scale.category20b();
             var force = d3.layout.force()
-                .nodes(d3.values(nodes))
-                .links(links)
-                .charge(-55)
-                .linkDistance(30)
+                .charge(-60)
+                .linkDistance(40)
                 .size([width - 2 * 10, height - 2 * 10])
                 //lookup gravity
-                .on("tick",tick)
-                .start();
+                .gravity(0.4);
+            
+            d3.json('spear.json', function(error, graph){
+                
+                var links = graph
+                var nodes = {};
+                
+                //separate out data into source and targets
+                links.forEach(function (link) {
+                    link.source = nodes[link.source] || (nodes[link.source] = {
+                        name: link.source
+                    });
+                    link.target = nodes[link.target] || (nodes[link.target] = {
+                        name: link.target
+                    });
+                });
+                
+                force
+                    .nodes(d3.values(nodes))
+                    .links(links)
+                    .on("tick",tick)
+                    .start();
+                    
+               // Define 'div' for tooltips
+                var div = d3.select("#graph")
+                	.append("div")  
+                	.attr("class", "tooltip")             
+                	.style("opacity", 0); 
+                	
+                var svg = d3.select("#graph").append("svg:svg")
+                    .attr("width",width)
+                    .attr("height",height)
+                    .attr("pointer-events", "all")
+                    .append('svg:g')
+                    .call(d3.behavior.zoom().on("zoom", redraw))
+                    .append('svg:g');
+                 
+                svg.append('svg:rect')
+                    .attr('width', width)
+                    .attr('height', height)
+                    .attr('fill', 'white');                 
+                    
+                 var path = svg.append("svg:g")
+                    .selectAll("path")
+                    .data(force.links())
+                   .enter().append("svg:path")
+                    .attr("class", function (d){return "link " + d.type;});
+                    
+                 var circle = svg.append("svg:g")
+                    .selectAll("circle")
+                    .data(force.nodes())
+                   .enter().append("svg:circle")
+                    .attr("r",6)
+                    .on("mouseover", function(d) { 
+                     d3.select(this).transition()        
+                         .duration(200)      
+                         .attr("r",20); 
+                         div.transition()
+         				.duration(500)	
+         				.style("opacity", 0);
+         			div.transition()
+         				.duration(200)	
+         				.style("opacity", 0.9);	
+         			div	.html(d.name)	 
+         				.style("left", (d3.event.pageX) + "px")			 
+         				.style("top", (d3.event.pageY - 2) + "px");
+                         })               
+                 .on("mouseout", function(d) {      
+                      d3.select(this).transition()        
+                         .duration(500)      
+                         .attr("r",6);   
+                      div.transition()
+         				.duration(200)	
+         				.style("opacity", 0);	
+                 })
+                 .attr("fill",function(d) { return color(d.name);})
+                 .call(force.drag);
+                    
+                    
+                    
+               function tick() {
+                    path.attr("d", function (d) {
+                        var dx = d.target.x - d.source.x,
+                            dy = d.target.y - d.source.y,
+                            dr = Math.sqrt(dx * dx + dy * dy);
+                        return "M" + d.source.x + "," + d.source.y + "A" + dr + "," + dr + " 0 0 1," + d.target.x + "," + d.target.y;
+                    });
+            
+                    circle.attr("transform", function (d) {
+                        return "translate(" + d.x + "," + d.y + ")";
+                    });
+            
+                }
              
-             var svg = d3.select("#graph").append("svg:svg")
-                .attr("width",width)
-                .attr("height",height);
-             
-             var path = svg.append("svg:g")
-                .selectAll("path")
-                .data(force.links())
-               .enter().append("svg:path")
-                .attr("class", function (d){return "link " + d.type;});
+             function redraw() {
+                  console.log("here", d3.event.translate, d3.event.scale);
+                  svg.attr("transform",
+                      "translate(" + d3.event.translate + ")"
+                      + " scale(" + d3.event.scale + ")");
+                } 
                 
-             var circle = svg.append("svg:g")
-                .selectAll("circle")
-                .data(force.nodes())
-               .enter().append("svg:circle")
-                .attr("r",6)
-                //.attr("class", function(force.links()[i]){ return "node type"+force.links.type})
-                //.attr("class", function (force.links()){return "link " + d.type;})
-                //.attr("class", function (d){return "link " + d.type;});
-                .call(force.drag);
-                
-            var text = svg.append("svg:g")
-                .selectAll("g")
-                .data(force.nodes())
-               .enter().append("svg:g")
-                .attr("class","nodeText");
-                
-            text.append("svg:text")
-                .attr("x", 8)
-                .attr("y",".31em")
-                .text(function (d){return d.name;});
-                
-           function tick() {
-                path.attr("d", function (d) {
-                    var dx = d.target.x - d.source.x,
-                        dy = d.target.y - d.source.y,
-                        dr = Math.sqrt(dx * dx + dy * dy);
-                    return "M" + d.source.x + "," + d.source.y + "A" + dr + "," + dr + " 0 0 1," + d.target.x + "," + d.target.y;
-                });
-        
-                circle.attr("transform", function (d) {
-                    return "translate(" + d.x + "," + d.y + ")";
-                });
-        
-                text.attr("transform", function (d) {
-                    return "translate(" + d.x + "," + d.y + ")";
-                });
-            }
-        
-         // Method to create the filter
+                      // Method to create the filter
             createFilter();
             
              // Method to create the filter, generate checkbox options on fly
@@ -1009,48 +201,54 @@
             
             
             // Method to filter graph
-        function filterGraph(aType, aVisibility) {
-            // change the visibility of the connection path
-            path.style("visibility", function (o) {
-                var lOriginalVisibility = $(this).css("visibility");
-                return o.type === aType ? aVisibility : lOriginalVisibility;
-            });
-    
-        // change the visibility of the node
-           // if all the links with that node are invisibile, the node should also be invisible
-           // otherwise if any link related to that node is visibile, the node should be visible
-           circle.style("visibility", function (o, i) {
-               var lHideNode = true;
-               path.each(function (d, i) {
-                   if (d.source === o || d.target === o) {
-                       if ($(this).css("visibility") === "visible") {
-                           lHideNode = false;
-                           // we need show the text for this circle
-                           d3.select(d3.selectAll(".nodeText")[0][i]).style("visibility", "visible");
-                           return "visible";
+            function filterGraph(aType, aVisibility) {
+                // change the visibility of the connection path
+                path.style("visibility", function (o) {
+                    var lOriginalVisibility = $(this).css("visibility");
+                    return o.type === aType ? aVisibility : lOriginalVisibility;
+                });
+        
+            // change the visibility of the node
+               // if all the links with that node are invisibile, the node should also be invisible
+               // otherwise if any link related to that node is visibile, the node should be visible
+               circle.style("visibility", function (o, i) {
+                   var lHideNode = true;
+                   path.each(function (d, i) {
+                       if (d.source === o || d.target === o) {
+                           if ($(this).css("visibility") === "visible") {
+                               lHideNode = false;
+                               // we need show the text for this circle
+                               d3.select(d3.selectAll(".nodeText")[0][i]).style("visibility", "visible");
+                               return "visible";
+                           }
                        }
+                   });
+                   if (lHideNode) {
+                       // we need hide the text for this circle 
+                       d3.select(d3.selectAll(".nodeText")[0][i]).style("visibility", "hidden");
+                       return "hidden";
                    }
                });
-               if (lHideNode) {
-                   // we need hide the text for this circle 
-                   d3.select(d3.selectAll(".nodeText")[0][i]).style("visibility", "hidden");
-                   return "hidden";
-               }
-           });
-       }   
-        
-        
-            
-            
+           }    
+                
+                
+                
             });
-            
-            
             //]]>  
              
     </script>
     </head>
     <body>
-        <div id="filterContainer" class="filterContainer checkbox-interaction-group"></div>
-        <div id="graph"></div>
+        <header>
+            <h1>D3js-class</h1>
+            <p><a href="index.html">Classwork for d3js</a></p>
+            <p class="view">
+                <a href="https://github.com/wsalesky/d3js-class">View the Project on GitHub <br/>
+                    <small>wsalesky/d3js-class</small></a></p>
+        </header>
+        <section id="contents" style="margin-top:0;padding:0;">
+            <div id="filterContainer" class="filterContainer checkbox-interaction-group"></div>
+            <div id="graph"></div>
+        </section>
     </body>
 </html>
