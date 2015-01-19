@@ -94,6 +94,7 @@
                 	.append("div")  
                 	.attr("class", "tooltip")             
                 	.style("opacity", 0); 
+                	
                 var svg = d3.select("#graph").append("svg:svg")
                     .attr("width",width)
                     .attr("height",height)
@@ -165,6 +166,33 @@
                       "translate(" + d3.event.translate + ")"
                       + " scale(" + d3.event.scale + ")");
                 } 
+                
+                
+            var connected = [d];
+            if(d.entity = "place" ) {
+                node.each(function(o) { if(isConnected(d, o)) { connected.push(o); } });
+            }
+            node.style("stroke-opacity", function(o) {
+                thisOpacity = opacity;
+                connected.forEach(function(e) { 
+                    if(isConnected(e, o)) { thisOpacity = 1; }
+                });
+                this.setAttribute('fill-opacity', thisOpacity);
+                return thisOpacity;
+            });
+
+                    link.style("stroke-opacity", function(o) {
+                        return o.source === d || o.target === d ? 1 : opacity;
+                    })
+                    
+                    .style("stroke", function(o) {
+                        return o.source === d || o.target === d ? color : "#000" ;
+                    });
+                };
+                
+                }                
+                
+                
             });
             //]]>  
              
